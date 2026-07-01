@@ -1,0 +1,29 @@
+# Local secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Operating system
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# Runtime caches
+__pycache__/
+*.py[cod]
+node_modules/
+.npm/
+.cache/
+
+# Private local outputs
+outputs/
+dev/
+SESSION_LOG*
+START_NEXT_SESSION_PROMPT.txt
