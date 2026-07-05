@@ -44,7 +44,7 @@ This is the current-state area. At every full closeout, rewrite or explicitly co
 <!-- ack:section:active-objective -->
 ## Active Objective
 
-PUBLIC positioning correction is locally complete and validated. Commit/push remains a separate action unless explicitly requested.
+PUBLIC positioning correction is committed, pushed, tagged, and published as GitHub Release `v0.1.0`. npm publish remains blocked because no `package.json` exists.
 
 <!-- ack:section:completed-this-session -->
 ## Completed This Session
@@ -57,10 +57,10 @@ Record only work actually completed in the current session.
 <!-- ack:section:next-priorities -->
 ## Next Priorities
 
-Recommended next step: decide whether to commit and push the corrected PUBLIC docs.
+Recommended next step: design the first real public package / CLI entry and minimum reproducible example before any npm publish attempt.
 
-1. If Adam authorizes it, commit and push the PUBLIC correction.
-3. After PUBLIC positioning is clean, decide the first real public product shape: package / CLI entry, minimal reproducible example, and user-facing end-to-end workflow.
+1. Design the first real public product shape: package / CLI entry, minimal reproducible example, and user-facing end-to-end workflow.
+2. Add package metadata and package QA before any npm publish attempt.
 4. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.
 
 <!-- ack:section:next-task-required-reading -->
@@ -80,13 +80,13 @@ Before acting on the next task, read or mark blocked:
 ## Risks / Blockers
 
 1. Main product risk: public docs may again drift into describing the underlying AI collaboration layer instead of the learning knowledge base system.
-2. Release risk: PUBLIC v0.1.0 still has no product package, CLI, deployment flow, or reproducible public example.
+2. Package risk: PUBLIC v0.1.0 still has no product package, CLI, deployment flow, or reproducible public example; npm publish cannot be performed yet.
 3. Privacy risk: PUBLIC must not import OPS data, private local material, Notion identifiers, credentials, or unlicensed third-party content.
 
 <!-- ack:section:validation-qc -->
 ## Validation / QC
 
-- Checks run this session: Agent Handoff Kit doctor passed 51/51; positioning pollution forbidden-phrase scan returned no matches; all remaining Agent Handoff Kit mentions were reviewed and are in bottom-layer / governance context; privacy scan found only boundary-rule text and handoff marker names, not actual secrets or private paths; `git diff --check` passed with CRLF warnings only.
+- Checks run this session: Agent Handoff Kit doctor passed 51/51; positioning pollution forbidden-phrase scan returned no matches; all remaining Agent Handoff Kit mentions were reviewed and are in bottom-layer / governance context; privacy scan found only boundary-rule text and handoff marker names, not actual secrets or private paths; `git diff --check` passed with CRLF warnings only; GitHub Release `v0.1.0` read-back succeeded.
 - Checks required before claiming complete: no additional local validation pending for the positioning correction.
 - Handoff evidence location: this file and `dev/SESSION_LOG.md` current entry.
 
@@ -108,6 +108,8 @@ Use statuses from `dev/DOC_SYNC_REGISTRY.md`: `confirmed`, `unverified`, `pendin
 - Project index: confirmed after doctor and scan.
 - Doc sync registry: confirmed after doctor and scan.
 - Public docs / README: confirmed after positioning scan.
+- GitHub sync: commit `5e84619`, tag `v0.1.0`, and GitHub Release `v0.1.0` verified.
+- npm publish: blocked because no `package.json` exists.
 - External knowledge tools: not_applicable.
 
 <!-- ack:section:state-reconciliation-check -->
@@ -166,7 +168,7 @@ Read dev/DOC_SYNC_REGISTRY.md before file changes or closeout.
 
 If this root does not match the expected project root, stop and ask for confirmation.
 
-Current state: PUBLIC v0.1.0 is an early public scaffold for the learning knowledge base system. The product is the AI-assisted, Obsidian-first knowledge system; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. The local positioning correction has passed validation. Do not present Agent Handoff Kit install/upgrade as the product.
+Current state: PUBLIC v0.1.0 is an early public scaffold for the learning knowledge base system. The product is the AI-assisted, Obsidian-first knowledge system; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. Public positioning is now clean; do not present Agent Handoff Kit install/upgrade as the product.
 
-Recommended next step: decide whether to commit and push the validated PUBLIC positioning correction. After that, design the first real public product package / CLI entry and minimal reproducible example. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.
+Recommended next step: design the first real public product package / CLI entry and minimal reproducible example before any npm publish attempt. Do not publish to npm or deploy without a real package and separate explicit validation.
 ```

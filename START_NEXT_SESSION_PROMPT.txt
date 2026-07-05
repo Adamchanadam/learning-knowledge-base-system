@@ -11,6 +11,6 @@ Read dev/DOC_SYNC_REGISTRY.md before file changes or closeout.
 
 If this root does not match the expected project root, stop and ask for confirmation.
 
-Current state: PUBLIC v0.1.0 is an early public scaffold for the learning knowledge base system. The product is the AI-assisted, Obsidian-first knowledge system; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. The local positioning correction has passed validation. Do not present Agent Handoff Kit install/upgrade as the product.
+Current state: PUBLIC v0.1.0 is an early public scaffold for the learning knowledge base system. The product is the AI-assisted, Obsidian-first knowledge system; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. Public positioning is now clean; do not present Agent Handoff Kit install/upgrade as the product.
 
-Recommended next step: decide whether to commit and push the validated PUBLIC positioning correction. After that, design the first real public product package / CLI entry and minimal reproducible example. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.
+Recommended next step: design the first real public product package / CLI entry and minimal reproducible example before any npm publish attempt. Do not publish to npm or deploy without a real package and separate explicit validation.

@@ -13,6 +13,21 @@ Keep recent entries concise. If older entries no longer affect the next action a
 Before closeout, record whether older log detail was kept, summarized, or archived, and whether the maintenance trigger check was no-op, triggered, or backstop-driven. Do not remove validation evidence, unresolved risks, or the latest opening message.
 
 <!-- ack:log-entry:start -->
+## 2026-07-05 — PUBLIC GitHub release v0.1.0
+
+- **ID:** codex-public-release-v0.1.0
+- **Summary:** Published the corrected PUBLIC positioning as Git commit, push, tag, and GitHub Release.
+- **Changed:** `dev/SESSION_HANDOFF.md`, `dev/SESSION_LOG.md`, `START_NEXT_SESSION_PROMPT.txt`.
+- **Done:** Commit `5e84619` pushed to `main`; tag `v0.1.0` pushed; GitHub Release `v0.1.0｜公開定位糾偏後的產品起點` created and read back.
+- **QC:** Agent Handoff Kit doctor passed 51/51; positioning scan passed; privacy scan found no actual secrets; `git diff --check` passed with CRLF warnings only.
+- **Evidence disposition:** Current release facts absorbed into `dev/SESSION_HANDOFF.md`; trace evidence kept here.
+- **Sync:** GitHub Release: https://github.com/Adamchanadam/learning-knowledge-base-system/releases/tag/v0.1.0.
+- **Pending:** npm publish is blocked until this repo has a real product package and `package.json`.
+- **Risks:** GitHub Release is not npm publication.
+- **Log maintenance:** No-op; release evidence checkpoint.
+<!-- ack:log-entry:end -->
+
+<!-- ack:log-entry:start -->
 ## 2026-07-05 — PUBLIC product positioning correction
 
 - **ID:** codex-public-positioning-correction
