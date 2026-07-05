@@ -134,7 +134,7 @@ Record this at closeout so the next AI can detect wrong-root or workspace drift.
 |---|---|---|
 | Expected project root | `<PUBLIC repo root>` | 2026-07-05 |
 | Git root | `<PUBLIC repo root>` | 2026-07-05 |
-| Branch / commit | `main` / `dcc2e18` README action-list cleanup pushed | 2026-07-05 |
+| Branch / commit | `main` / `90ab4b3` product rename pushed | 2026-07-05 |
 | Worktree or parallel workspace | PUBLIC workspace only; separate from OPS | 2026-07-05 |
 | Uncommitted change summary | PUBLIC positioning correction across README, boundary docs, docs/examples/skill placeholders, and governance files | 2026-07-05 |
 

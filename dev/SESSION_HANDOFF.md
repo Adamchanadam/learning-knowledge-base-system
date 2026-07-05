@@ -109,7 +109,7 @@ Use statuses from `dev/DOC_SYNC_REGISTRY.md`: `confirmed`, `unverified`, `pendin
 - Project index: confirmed after doctor and scan.
 - Doc sync registry: confirmed after doctor and scan.
 - Public docs / README: confirmed after positioning scan.
-- GitHub sync: commit `5e84619`, tag `v0.1.0`, and GitHub Release `v0.1.0` verified; release body updated for public-reader cleanup and product rename; remote README scan passed before final rename commit.
+- GitHub sync: commit `90ab4b3` pushed to `main`; tag `v0.1.0` remains; GitHub Release `v0.1.0` body updated for public-reader cleanup and product rename; remote README read-back contains `意脈系統` and rename / public-reader scan passed.
 - npm publish: blocked because no `package.json` exists.
 - External knowledge tools: not_applicable.
 

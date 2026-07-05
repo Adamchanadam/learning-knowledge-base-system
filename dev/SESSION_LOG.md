@@ -21,8 +21,8 @@ Before closeout, record whether older log detail was kept, summarized, or archiv
 - **Done:** Updated the product display name and positioning text while leaving the GitHub repository URL unchanged.
 - **QC:** Rename scan passed with no old display-name matches; public-reader pollution scan passed for README and release note; Agent Handoff Kit doctor passed 51/51; `git diff --check` passed with CRLF warnings only; GitHub Release body was updated and read back.
 - **Evidence disposition:** Current product identity is in `dev/PROJECT_INDEX.md` and `dev/SESSION_HANDOFF.md`; trace evidence kept here.
-- **Sync:** GitHub Release v0.1.0 body updated; local commit and push pending.
-- **Pending:** Commit, push, and read back remote README.
+- **Sync:** Commit `90ab4b3` pushed to `main`; GitHub Release v0.1.0 body updated and read back; remote README read-back contains `意脈系統` and the rename / public-reader scan returned zero matches.
+- **Pending:** None for this rename cleanup.
 - **Risks:** Repository URL still contains the old slug; treat it as a coordinate, not the display name.
 - **Log maintenance:** No-op; rename correction checkpoint.
 <!-- ack:log-entry:end -->
