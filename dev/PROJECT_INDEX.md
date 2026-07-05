@@ -20,7 +20,7 @@ Purpose: give a stateless AI a compact map of the PUBLIC project before it reads
 
 | Path | Role | Read when |
 |---|---|---|
-| `README.md` | public product entrypoint: what the learning knowledge base system is, who it serves, current status, and next product shape | public-facing docs or onboarding change |
+| `README.md` | public product entrypoint: what the learning knowledge base system is, who it serves, and current status | public-facing docs or onboarding change |
 | `PUBLICATION_BOUNDARY.md` | public/private boundary and product-vs-governance separation source of truth | before importing, publishing, syncing, or documenting content |
 | `docs/README.md` | public product documentation index | public docs change |
 | `docs/releases/` | public release notes written for product readers, not internal development logs | release |
@@ -123,7 +123,7 @@ Use this section for project-local runbooks or verified procedures for runtime-c
 | Agent Handoff Kit doctor | `npx --yes @adamchanadam/agent-handoff-kit@latest doctor --root .` | closeout / governance changes / generated Markdown artifact checks | 2026-07-05 |
 | Positioning pollution scan | search public and governance docs for phrases that present Agent Handoff Kit as the product body or install target | before commit, push, release, or publishing public docs | 2026-07-05 positioning correction validated |
 | Public privacy scan | search for private local paths, OPS internal paths, credentials, private knowledge-base identifiers, and unapproved outputs | before commit, push, release, or publishing public docs | 2026-07-05 |
-| Public-reader pollution scan | search README and release notes for obsolete private-tool names, internal governance lists, and release-operation reminders that do not belong in public product copy | before commit, push, release, or publishing public docs | 2026-07-05 |
+| Public-reader pollution scan | search README and release notes for obsolete private-tool names, internal governance lists, release-operation reminders, and maintainer action-list headings such as `## 下一步` that do not belong in public product copy | before commit, push, release, or publishing public docs | 2026-07-05 |
 | Project governance check | Check newly created Markdown / durable artifacts against `dev/PROJECT_INDEX.md` and `dev/DOC_SYNC_REGISTRY.md`; register, sync, consolidate, or explicitly classify as temporary / one-time evidence | closeout / durable file changes | 2026-07-05 |
 
 ## Workspace Identity

@@ -82,7 +82,7 @@ Before acting on the next task, read or mark blocked:
 1. Main product risk: public docs may again drift into describing the underlying AI collaboration layer instead of the learning knowledge base system.
 2. Package risk: PUBLIC v0.1.0 still has no product package, CLI, deployment flow, or reproducible public example; npm publish cannot be performed yet.
 3. Privacy risk: PUBLIC must not import OPS data, private local material, private knowledge-base identifiers, credentials, or unlicensed third-party content.
-4. Public-copy risk: README and release notes must not present internal governance boundaries, release-operation reminders, or obsolete private-tool names as public product content.
+4. Public-copy risk: README and release notes must not present internal governance boundaries, release-operation reminders, obsolete private-tool names, or maintainer action-list headings as public product content.
 
 <!-- ack:section:validation-qc -->
 ## Validation / QC

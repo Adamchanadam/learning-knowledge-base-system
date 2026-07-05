@@ -13,6 +13,21 @@ Keep recent entries concise. If older entries no longer affect the next action a
 Before closeout, record whether older log detail was kept, summarized, or archived, and whether the maintenance trigger check was no-op, triggered, or backstop-driven. Do not remove validation evidence, unresolved risks, or the latest opening message.
 
 <!-- ack:log-entry:start -->
+## 2026-07-05 — PUBLIC README action-list cleanup
+
+- **ID:** codex-public-readme-action-list-cleanup
+- **Summary:** Removed the public README `下一步` section after Adam identified it as internal action messaging with no user value.
+- **Changed:** `README.md`, `dev/PROJECT_INDEX.md`, `dev/SESSION_HANDOFF.md`, this log.
+- **Done:** Deleted the maintainer action-list section from README and tightened public-reader validation so README must not contain public-facing maintainer action headings.
+- **QC:** Local README action-list scan passed; public-reader pollution scan passed for README and v0.1.0 release note; Agent Handoff Kit doctor passed 51/51 using `C:\tmp\npm-cache`; `git diff --check` passed with CRLF warnings only.
+- **Evidence disposition:** Current rule added to `dev/PROJECT_INDEX.md`; trace evidence kept here.
+- **Sync:** Pending commit, push, and remote README read-back.
+- **Pending:** Commit, push, and read back remote README.
+- **Risks:** Previous public-reader scan still allowed roadmap/action-list language as if it were useful product copy.
+- **Log maintenance:** No-op; corrective evidence checkpoint.
+<!-- ack:log-entry:end -->
+
+<!-- ack:log-entry:start -->
 ## 2026-07-05 — PUBLIC public-reader cleanup
 
 - **ID:** codex-public-reader-cleanup
