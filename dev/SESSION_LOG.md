@@ -13,6 +13,21 @@ Keep recent entries concise. If older entries no longer affect the next action a
 Before closeout, record whether older log detail was kept, summarized, or archived, and whether the maintenance trigger check was no-op, triggered, or backstop-driven. Do not remove validation evidence, unresolved risks, or the latest opening message.
 
 <!-- ack:log-entry:start -->
+## 2026-07-05 — PUBLIC product rename to 意脈系統
+
+- **ID:** codex-public-product-rename-yimai
+- **Summary:** Renamed the public product from the old knowledge-base-oriented name to `意脈系統`, a name aligned with knowledge, association, and taste-building.
+- **Changed:** `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, `docs/releases/v0.1.0.md`, `examples/README.md`, `skill/README.md`, `START_NEXT_SESSION_PROMPT.txt`, `dev/DOC_SYNC_REGISTRY.md`, `dev/PROJECT_INDEX.md`, `dev/SESSION_HANDOFF.md`, this log.
+- **Done:** Updated the product display name and positioning text while leaving the GitHub repository URL unchanged.
+- **QC:** Rename scan passed with no old display-name matches; public-reader pollution scan passed for README and release note; Agent Handoff Kit doctor passed 51/51; `git diff --check` passed with CRLF warnings only; GitHub Release body was updated and read back.
+- **Evidence disposition:** Current product identity is in `dev/PROJECT_INDEX.md` and `dev/SESSION_HANDOFF.md`; trace evidence kept here.
+- **Sync:** GitHub Release v0.1.0 body updated; local commit and push pending.
+- **Pending:** Commit, push, and read back remote README.
+- **Risks:** Repository URL still contains the old slug; treat it as a coordinate, not the display name.
+- **Log maintenance:** No-op; rename correction checkpoint.
+<!-- ack:log-entry:end -->
+
+<!-- ack:log-entry:start -->
 ## 2026-07-05 — PUBLIC README action-list cleanup
 
 - **ID:** codex-public-readme-action-list-cleanup
@@ -63,7 +78,7 @@ Before closeout, record whether older log detail was kept, summarized, or archiv
 - **ID:** codex-public-positioning-correction
 - **Summary:** Corrected PUBLIC docs and governance after Adam identified that the repo wrongly presented Agent Handoff Kit as the public product instead of the bottom AI collaboration layer.
 - **Changed:** `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, `examples/README.md`, `skill/README.md`, `dev/SESSION_HANDOFF.md`, `dev/PROJECT_INDEX.md`, `dev/DOC_SYNC_REGISTRY.md`, `START_NEXT_SESSION_PROMPT.txt`, this log.
-- **Done:** Reframed the public product as `學習型知識庫系統`: an AI-assisted, Obsidian-first knowledge system that turns sources into reusable knowledge, personal application judgment, cross-source insight, and outcome pages. Reclassified Agent Handoff Kit as governance / continuity infrastructure only.
+- **Done:** Reframed the public product as `意脈系統`: an AI-assisted, Obsidian-first system for knowledge, association, and taste-building that turns sources into reusable knowledge, personal judgment, cross-source association, taste signals, and outcome pages. Reclassified Agent Handoff Kit as governance / continuity infrastructure only.
 - **QC:** Agent Handoff Kit doctor passed 51/51; positioning forbidden-phrase scan returned no matches; remaining Agent Handoff Kit mentions were reviewed as bottom-layer / governance context; privacy scan found only boundary-rule text and handoff marker names, not actual secrets or private paths; `git diff --check` passed with CRLF warnings only.
 - **Evidence disposition:** Current corrected state absorbed into `dev/SESSION_HANDOFF.md`; file map and checks updated in `dev/PROJECT_INDEX.md`; sync rows updated in `dev/DOC_SYNC_REGISTRY.md`; this entry preserves trace evidence.
 - **Sync:** PUBLIC docs and governance were updated locally only. No commit, push, tag, GitHub release, npm publish, deploy, credential operation, or permission change.
@@ -89,7 +104,7 @@ Read dev/DOC_SYNC_REGISTRY.md before file changes or closeout.
 
 If this root does not match the expected project root, stop and ask for confirmation.
 
-Current state: PUBLIC v0.1.0 is an early public scaffold for the learning knowledge base system. The product is the AI-assisted, Obsidian-first knowledge system; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. The local positioning correction has passed validation. Do not present Agent Handoff Kit install/upgrade as the product.
+Current state: PUBLIC v0.1.0 is an early public scaffold for 意脈系統. The product is the AI-assisted, Obsidian-first system for knowledge, association, and taste-building; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. The local positioning correction has passed validation. Do not present Agent Handoff Kit install/upgrade as the product.
 
 Recommended next step: decide whether to commit and push the validated PUBLIC positioning correction. After that, design the first real public product package / CLI entry and minimal reproducible example. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.
 ```

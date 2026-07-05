@@ -10,8 +10,8 @@ Use: `confirmed`, `unverified`, `pending`, `blocked`, `not_applicable`.
 |---|---|---|
 | New file or directory | `dev/PROJECT_INDEX.md` Directory Map | path listed |
 | Generated Markdown or durable artifact | `dev/PROJECT_INDEX.md` Directory Map / Fact Base / Entry Points, and this registry when future updates need sync | artifact classified as indexed / synced / temporary / one-time evidence; duplicate source-of-truth risk checked |
-| Public product positioning | `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, `examples/README.md`, `skill/README.md`, `dev/SESSION_HANDOFF.md`, `dev/PROJECT_INDEX.md` | public docs describe `學習型知識庫系統` as the product; Agent Handoff Kit appears only as underlying AI collaboration / governance layer |
-| Public product package or CLI behavior | `README.md`, `docs/`, `examples/`, `skill/`, package metadata when added, `dev/PROJECT_INDEX.md` | commands install or run the learning knowledge base system itself; dependency docs do not become product docs |
+| Public product positioning | `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, `examples/README.md`, `skill/README.md`, `dev/SESSION_HANDOFF.md`, `dev/PROJECT_INDEX.md` | public docs describe `意脈系統` as the product; Agent Handoff Kit appears only as underlying AI collaboration / governance layer |
+| Public product package or CLI behavior | `README.md`, `docs/`, `examples/`, `skill/`, package metadata when added, `dev/PROJECT_INDEX.md` | commands install or run 意脈系統 itself; dependency docs do not become product docs |
 | Public boundary behavior | `PUBLICATION_BOUNDARY.md`, `README.md`, `docs/README.md`, `examples/README.md`, `skill/README.md` | privacy scan confirms no OPS/private data imported; positioning scan confirms no governance layer is presented as product body |
 | Stack or command change | `dev/PROJECT_INDEX.md` Stack / Entry Points / Tool Operation References | command verified or marked unverified |
 | Public behavior change | README, public docs, PUBLICATION_BOUNDARY.md release notes format | docs mention current behavior |

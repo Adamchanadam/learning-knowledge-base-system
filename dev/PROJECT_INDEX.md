@@ -8,7 +8,7 @@ Purpose: give a stateless AI a compact map of the PUBLIC project before it reads
 |---|---|---|
 | Agent Handoff Kit template version | 0.3.36 | 2026-07-05 |
 | Public product version | 0.1.0 | 2026-07-05 |
-| Product identity | 學習型知識庫系統 | 2026-07-05 positioning correction |
+| Product identity | 意脈系統 | 2026-07-05 rename correction |
 | Runtime | Public Markdown scaffold + local Agent Handoff Kit governance | 2026-07-05 |
 | Framework | Not applicable — public product scaffold | 2026-07-05 |
 | Package manager | Not yet defined for the product; npm package / CLI still pending | 2026-07-05 positioning correction |
@@ -20,12 +20,12 @@ Purpose: give a stateless AI a compact map of the PUBLIC project before it reads
 
 | Path | Role | Read when |
 |---|---|---|
-| `README.md` | public product entrypoint: what the learning knowledge base system is, who it serves, and current status | public-facing docs or onboarding change |
+| `README.md` | public product entrypoint: what 意脈系統 is, who it serves, and current status | public-facing docs or onboarding change |
 | `PUBLICATION_BOUNDARY.md` | public/private boundary and product-vs-governance separation source of truth | before importing, publishing, syncing, or documenting content |
 | `docs/README.md` | public product documentation index | public docs change |
 | `docs/releases/` | public release notes written for product readers, not internal development logs | release |
 | `examples/README.md` | public reproducible examples placeholder and constraints | adding or changing examples |
-| `skill/README.md` | future learning knowledge base system skill/package placeholder and constraints | adding or changing skill package content |
+| `skill/README.md` | future 意脈系統 skill/package placeholder and constraints | adding or changing skill package content |
 | `VERSION` | public product version source until package metadata exists | version bump |
 | `AGENTS.md` | Agent Handoff Kit entry and startup contract for AI collaborators, not ordinary public product docs | session startup |
 | `CLAUDE.md` | Claude Code bridge to the same startup path | Claude Code startup |
@@ -66,7 +66,7 @@ Reachable means the source can be found. It does not mean the source has been re
 | `https://github.com/Adamchanadam/agent-handoff-kit` | Agent Handoff Kit reference for governance-layer behavior only | changing Agent Handoff Kit governance claims | browser / manual web read | manual paste | no write | 2026-07-05 |
 | `https://adamchanadam.github.io/agent-handoff-kit/agent-handoff-kit-ai-install.html` | Agent Handoff Kit install/upgrade reference for governance-layer maintenance only | changing Agent Handoff Kit runtime maintenance commands | browser / manual web read | manual paste | no write | 2026-07-05 |
 
-> Agent Handoff Kit external sources must not be used as the product install truth for `學習型知識庫系統`. Product package / CLI / deployment sources are not defined yet.
+> Agent Handoff Kit external sources must not be used as the product install truth for `意脈系統`. Product package / CLI / deployment sources are not defined yet.
 
 ## Installed Integrations
 
@@ -102,7 +102,7 @@ Reachable means the source can be found. It does not mean the source has been re
 
 | Layer | Surface (specific instance) | Role | Write Direction |
 |-------|--------------------------|------|-----------------|
-| Public product truth | `README.md`, `docs/`, `examples/`, `skill/`, future package files | Learning knowledge base system positioning, public docs, examples, and product packaging | Agent may edit local files after reading boundary and with normal safety checks |
+| Public product truth | `README.md`, `docs/`, `examples/`, `skill/`, future package files | 意脈系統 positioning, public docs, examples, and product packaging | Agent may edit local files after reading boundary and with normal safety checks |
 | Boundary truth | `PUBLICATION_BOUNDARY.md` | Public/private separation and product-vs-governance separation | Agent updates when public boundary changes |
 | Index | `dev/PROJECT_INDEX.md` | File map, commands, and durable artifact registration | Agent updates when durable files, commands, or entrypoints change |
 | Governance state | `dev/SESSION_HANDOFF.md`, `dev/SESSION_LOG.md`, `dev/DOC_SYNC_REGISTRY.md` | PUBLIC current state, trace evidence, and sync obligations | Agent updates per Agent Handoff Kit rules |

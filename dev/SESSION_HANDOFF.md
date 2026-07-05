@@ -7,8 +7,8 @@ Last Updated: 2026-07-05
 
 Stable facts that should survive across sessions. Update only when they change, but verify they still match reality at closeout.
 
-1. Project root and boundary: `<PUBLIC repo root>`; public-facing workspace for the learning knowledge base system, not an OPS mirror.
-2. Product identity: `學習型知識庫系統` v0.1.0. The public product is an AI-assisted, Obsidian-first learning knowledge base system that turns sources into reusable knowledge, personal application judgment, cross-source insight, and reader-facing outcome pages.
+1. Project root and boundary: `<PUBLIC repo root>`; public-facing workspace for 意脈系統, not an OPS mirror.
+2. Product identity: `意脈系統` v0.1.0. The public product is an AI-assisted, Obsidian-first system for knowledge, association, and taste-building that turns sources into reusable knowledge, personal judgment, cross-source association, taste signals, and reader-facing outcome pages.
 3. Agent Handoff Kit role: installed as the PUBLIC local AI collaboration and continuity layer only. It is not the public product body, install promise, or user-facing value proposition.
 4. Source-of-truth ownership: PUBLIC docs and `dev/` files describe only this public repo. OPS data, OPS handoff history, internal research outputs, private knowledge-base data, credentials, and local private paths are excluded.
 5. Release / publish boundary: commit, push, tag, release, package publish, and deploy need explicit user authorization.
@@ -23,7 +23,7 @@ This is the current-state area. At every full closeout, rewrite or explicitly co
 ## Current Baseline
 
 1. Project root: `<PUBLIC repo root>`.
-2. Product/system state: v0.1.0 public repo is an early scaffold for the learning knowledge base system. It now describes the product itself first; Agent Handoff Kit is only documented as the underlying AI collaboration layer.
+2. Product/system state: v0.1.0 public repo is an early scaffold for 意脈系統. It now describes the product itself first; Agent Handoff Kit is only documented as the underlying AI collaboration layer.
 3. Public docs state: `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, `examples/README.md`, and `skill/README.md` were corrected on 2026-07-05 after a positioning audit found the previous README incorrectly presented Agent Handoff Kit as the product body.
 4. Package state: no npm package, product CLI, deployment flow, or reproducible public example has been released yet.
 5. Governance state: Agent Handoff Kit v0.3.36 remains installed for local AI continuity; public-facing product claims must not be derived from the Kit's install/upgrade page.
@@ -34,10 +34,10 @@ This is the current-state area. At every full closeout, rewrite or explicitly co
 <!-- ack:field:user-intent -->
 - User intent: Correct the PUBLIC repo after identifying that its README and governance files wrongly framed Agent Handoff Kit as the public product instead of the underlying collaboration mechanism.
 <!-- ack:field:task-essence -->
-- Task essence: Restore the correct public positioning: the product is `學習型知識庫系統`; Agent Handoff Kit is only the bottom layer for AI collaboration, startup, closeout, upgrade discipline, and governance continuity.
-- User value: Public readers should understand what the learning knowledge base system does, who it is for, what it produces, and what is not yet released.
+- Task essence: Restore the correct public positioning: the product is `意脈系統`; Agent Handoff Kit is only the bottom layer for AI collaboration, startup, closeout, upgrade discipline, and governance continuity.
+- User value: Public readers should understand what 意脈系統 does, who it is for, what it produces, and what is not yet released.
 <!-- ack:field:success-criteria -->
-- Success criteria: PUBLIC README first describes the learning knowledge base system; no public-facing doc tells users to install Agent Handoff Kit as if that were the product; governance files preserve the corrected distinction; validation scans confirm the old positioning phrases are gone.
+- Success criteria: PUBLIC README first describes 意脈系統 as a knowledge, association, and taste-building product; no public-facing doc tells users to install Agent Handoff Kit as if that were the product; governance files preserve the corrected distinction; validation scans confirm the old positioning phrases are gone.
 - Key background already read: PUBLIC `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, `examples/README.md`, `skill/README.md`, `dev/SESSION_HANDOFF.md`, `dev/PROJECT_INDEX.md`, `dev/DOC_SYNC_REGISTRY.md`, OPS formal product requirements.
 - Non-goals / boundaries: Do not tag, create a GitHub release, publish to npm, deploy, or import OPS internal material.
 
@@ -51,7 +51,7 @@ PUBLIC positioning correction is committed, pushed, tagged, and published as Git
 
 Record only work actually completed in the current session.
 
-1. PUBLIC public-facing docs were corrected so `學習型知識庫系統` is the product body and Agent Handoff Kit is only the underlying collaboration layer.
+1. PUBLIC public-facing docs were corrected so `意脈系統` is the product body and Agent Handoff Kit is only the underlying collaboration layer.
 2. PUBLIC governance state was rewritten to prevent future agents from treating Agent Handoff Kit install/upgrade as the product's public value proposition.
 
 <!-- ack:section:next-priorities -->
@@ -79,7 +79,7 @@ Before acting on the next task, read or mark blocked:
 <!-- ack:section:risks-blockers -->
 ## Risks / Blockers
 
-1. Main product risk: public docs may again drift into describing the underlying AI collaboration layer instead of the learning knowledge base system.
+1. Main product risk: public docs may again drift into describing the underlying AI collaboration layer instead of 意脈系統.
 2. Package risk: PUBLIC v0.1.0 still has no product package, CLI, deployment flow, or reproducible public example; npm publish cannot be performed yet.
 3. Privacy risk: PUBLIC must not import OPS data, private local material, private knowledge-base identifiers, credentials, or unlicensed third-party content.
 4. Public-copy risk: README and release notes must not present internal governance boundaries, release-operation reminders, obsolete private-tool names, or maintainer action-list headings as public product content.
@@ -87,7 +87,7 @@ Before acting on the next task, read or mark blocked:
 <!-- ack:section:validation-qc -->
 ## Validation / QC
 
-- Checks run this session: public-reader pollution scan passed for README and v0.1.0 release note; selected public docs have zero obsolete private-tool-name matches; Agent Handoff Kit doctor passed 51/51 using a writable temporary npm cache; `git diff --check` passed with CRLF warnings only; GitHub Release `v0.1.0` body was edited and read back clean.
+- Checks run this session: public-reader pollution scan passed for README and v0.1.0 release note; old display-name scan passed except immutable repository coordinates; selected public docs have zero obsolete private-tool-name matches; Agent Handoff Kit doctor passed 51/51 using a writable temporary npm cache; `git diff --check` passed with CRLF warnings only; GitHub Release `v0.1.0` body was edited and read back clean.
 - Checks required before claiming complete: no additional validation pending for this cleanup.
 - Handoff evidence location: this file and `dev/SESSION_LOG.md` current entry.
 
@@ -109,7 +109,7 @@ Use statuses from `dev/DOC_SYNC_REGISTRY.md`: `confirmed`, `unverified`, `pendin
 - Project index: confirmed after doctor and scan.
 - Doc sync registry: confirmed after doctor and scan.
 - Public docs / README: confirmed after positioning scan.
-- GitHub sync: commit `5e84619`, tag `v0.1.0`, and GitHub Release `v0.1.0` verified; release body updated during public-reader cleanup; remote README scan passed.
+- GitHub sync: commit `5e84619`, tag `v0.1.0`, and GitHub Release `v0.1.0` verified; release body updated for public-reader cleanup and product rename; remote README scan passed before final rename commit.
 - npm publish: blocked because no `package.json` exists.
 - External knowledge tools: not_applicable.
 
@@ -169,7 +169,7 @@ Read dev/DOC_SYNC_REGISTRY.md before file changes or closeout.
 
 If this root does not match the expected project root, stop and ask for confirmation.
 
-Current state: PUBLIC v0.1.0 is an early public scaffold for the learning knowledge base system. The product is the AI-assisted, Obsidian-first knowledge system; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. Public positioning is now clean; do not present Agent Handoff Kit install/upgrade as the product.
+Current state: PUBLIC v0.1.0 is an early public scaffold for 意脈系統. The product is the AI-assisted, Obsidian-first system for knowledge, association, and taste-building; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. Public positioning is now clean; do not present Agent Handoff Kit install/upgrade as the product.
 
 Recommended next step: design the first real public product package / CLI entry and minimal reproducible example.
 ```
