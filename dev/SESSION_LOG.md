@@ -13,6 +13,21 @@ Keep recent entries concise. If older entries no longer affect the next action a
 Before closeout, record whether older log detail was kept, summarized, or archived, and whether the maintenance trigger check was no-op, triggered, or backstop-driven. Do not remove validation evidence, unresolved risks, or the latest opening message.
 
 <!-- ack:log-entry:start -->
+## 2026-07-05 — PUBLIC public-reader cleanup
+
+- **ID:** codex-public-reader-cleanup
+- **Summary:** Follow-up correction after Adam identified that README and GitHub Release copy still exposed internal release-boundary language and obsolete private-tool wording.
+- **Changed:** `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/releases/v0.1.0.md`, `examples/README.md`, `skill/README.md`, `dev/SESSION_HANDOFF.md`, `dev/PROJECT_INDEX.md`, `START_NEXT_SESSION_PROMPT.txt`, this log.
+- **Done:** Removed the internal boundary list from the public README, rewrote v0.1.0 release notes for public readers, replaced obsolete private-tool wording with generic private knowledge-base wording, and added public-reader pollution scanning as a required validation layer.
+- **QC:** Public-reader pollution scan passed for README and v0.1.0 release note; selected public docs have zero obsolete private-tool-name matches; Agent Handoff Kit doctor passed 51/51 using `C:\tmp\npm-cache`; `git diff --check` passed with CRLF warnings only; GitHub Release body was edited and read back clean.
+- **Evidence disposition:** Current correction absorbed into `dev/SESSION_HANDOFF.md`; validation rule added to `dev/PROJECT_INDEX.md`; trace evidence kept here.
+- **Sync:** GitHub Release v0.1.0 body updated and read back; local commit and push pending.
+- **Pending:** Commit and push the local cleanup.
+- **Risks:** Previous validation missed public-copy pollution because it checked product-positioning and privacy only, not public-reader suitability.
+- **Log maintenance:** No-op; corrective evidence checkpoint.
+<!-- ack:log-entry:end -->
+
+<!-- ack:log-entry:start -->
 ## 2026-07-05 — PUBLIC GitHub release v0.1.0
 
 - **ID:** codex-public-release-v0.1.0
@@ -76,7 +91,7 @@ Recommended next step: decide whether to commit and push the validated PUBLIC po
 - **Evidence disposition:** Current state absorbed into `dev/SESSION_HANDOFF.md`; file map indexed in `dev/PROJECT_INDEX.md`; trace evidence kept in this log.
 - **Sync:** PUBLIC install, upgrade, boundary, generated Markdown, and closeout/startup sync rows updated in `dev/DOC_SYNC_REGISTRY.md`.
 - **Pending:** Final doctor, private-data scan, diff review, commit PUBLIC changes, and push main in this turn. Tag, GitHub release, npm publish, or deploy still require separate explicit authorization.
-- **Risks:** PUBLIC must not import OPS data, internal outputs, private Notion identifiers, credentials, or local private paths.
+- **Risks:** PUBLIC must not import OPS data, internal outputs, private knowledge-base identifiers, credentials, or local private paths.
 - **Log maintenance:** No-op; first PUBLIC Agent Handoff Kit session log entry.
 
 ### Next Session Opening Message
@@ -97,7 +112,7 @@ Read dev/DOC_SYNC_REGISTRY.md before file changes or closeout.
 
 If this root does not match the expected project root, stop and ask for confirmation.
 
-Current state: PUBLIC repo uses Agent Handoff Kit v0.3.36 as its local agentic-AI operating layer. This repo is public-facing and must not import OPS data, OPS handoff history, internal research outputs, private Notion data, local private paths, credentials, or unlicensed third-party material.
+Current state: PUBLIC repo uses Agent Handoff Kit v0.3.36 as its local agentic-AI operating layer. This repo is public-facing and must not import OPS data, OPS handoff history, internal research outputs, private knowledge-base data, local private paths, credentials, or unlicensed third-party material.
 
 Recommended next step: after authorized commit and push, decide the first public package structure and minimum viable public example. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.
 ```

@@ -10,7 +10,7 @@ Stable facts that should survive across sessions. Update only when they change, 
 1. Project root and boundary: `<PUBLIC repo root>`; public-facing workspace for the learning knowledge base system, not an OPS mirror.
 2. Product identity: `學習型知識庫系統` v0.1.0. The public product is an AI-assisted, Obsidian-first learning knowledge base system that turns sources into reusable knowledge, personal application judgment, cross-source insight, and reader-facing outcome pages.
 3. Agent Handoff Kit role: installed as the PUBLIC local AI collaboration and continuity layer only. It is not the public product body, install promise, or user-facing value proposition.
-4. Source-of-truth ownership: PUBLIC docs and `dev/` files describe only this public repo. OPS data, OPS handoff history, internal research outputs, private Notion data, credentials, and local private paths are excluded.
+4. Source-of-truth ownership: PUBLIC docs and `dev/` files describe only this public repo. OPS data, OPS handoff history, internal research outputs, private knowledge-base data, credentials, and local private paths are excluded.
 5. Release / publish boundary: commit, push, tag, release, package publish, and deploy need explicit user authorization.
 6. Installed Integrations registry: `dev/PROJECT_INDEX.md` `## Installed Integrations` section is the project's authoritative declaration of installed Connectors / MCPs / Plugins / Skills. Credential values never appear here or in any `dev/*` file.
 
@@ -44,7 +44,7 @@ This is the current-state area. At every full closeout, rewrite or explicitly co
 <!-- ack:section:active-objective -->
 ## Active Objective
 
-PUBLIC positioning correction is committed, pushed, tagged, and published as GitHub Release `v0.1.0`. npm publish remains blocked because no `package.json` exists.
+PUBLIC positioning correction is committed, pushed, tagged, and published as GitHub Release `v0.1.0`. The follow-up public-reader cleanup has updated local README / release copy and the GitHub Release body to remove internal release-boundary language and obsolete private-tool wording.
 
 <!-- ack:section:completed-this-session -->
 ## Completed This Session
@@ -57,11 +57,11 @@ Record only work actually completed in the current session.
 <!-- ack:section:next-priorities -->
 ## Next Priorities
 
-Recommended next step: design the first real public package / CLI entry and minimum reproducible example before any npm publish attempt.
+Recommended next step: commit and push the public-reader cleanup, then design the first real public package / CLI entry and minimum reproducible example.
 
 1. Design the first real public product shape: package / CLI entry, minimal reproducible example, and user-facing end-to-end workflow.
-2. Add package metadata and package QA before any npm publish attempt.
-4. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.
+2. Add package metadata and package QA before any package publication attempt.
+3. Keep public-facing README and release notes focused on user value, not internal governance or release-operation reminders.
 
 <!-- ack:section:next-task-required-reading -->
 ## Next Task Required Reading
@@ -81,13 +81,14 @@ Before acting on the next task, read or mark blocked:
 
 1. Main product risk: public docs may again drift into describing the underlying AI collaboration layer instead of the learning knowledge base system.
 2. Package risk: PUBLIC v0.1.0 still has no product package, CLI, deployment flow, or reproducible public example; npm publish cannot be performed yet.
-3. Privacy risk: PUBLIC must not import OPS data, private local material, Notion identifiers, credentials, or unlicensed third-party content.
+3. Privacy risk: PUBLIC must not import OPS data, private local material, private knowledge-base identifiers, credentials, or unlicensed third-party content.
+4. Public-copy risk: README and release notes must not present internal governance boundaries, release-operation reminders, or obsolete private-tool names as public product content.
 
 <!-- ack:section:validation-qc -->
 ## Validation / QC
 
-- Checks run this session: Agent Handoff Kit doctor passed 51/51; positioning pollution forbidden-phrase scan returned no matches; all remaining Agent Handoff Kit mentions were reviewed and are in bottom-layer / governance context; privacy scan found only boundary-rule text and handoff marker names, not actual secrets or private paths; `git diff --check` passed with CRLF warnings only; GitHub Release `v0.1.0` read-back succeeded.
-- Checks required before claiming complete: no additional local validation pending for the positioning correction.
+- Checks run this session: public-reader pollution scan passed for README and v0.1.0 release note; selected public docs have zero obsolete private-tool-name matches; Agent Handoff Kit doctor passed 51/51 using a writable temporary npm cache; `git diff --check` passed with CRLF warnings only; GitHub Release `v0.1.0` body was edited and read back clean.
+- Checks required before claiming complete: commit and push the local cleanup, then read back public GitHub README if needed.
 - Handoff evidence location: this file and `dev/SESSION_LOG.md` current entry.
 
 <!-- ack:section:workspace-identity -->
@@ -96,7 +97,7 @@ Before acting on the next task, read or mark blocked:
 Expected project root: `<PUBLIC repo root>`
 Git root: `<PUBLIC repo root>`
 Branch: `main`
-Commit: `ebddfd1 Clarify public release notes format`
+Commit: active correction not yet pushed; verify with `git rev-parse HEAD` after commit.
 Worktree / parallel workspace status: PUBLIC root only; separate from OPS workspace.
 Uncommitted changes summary: PUBLIC positioning correction across public docs and governance files.
 
@@ -108,7 +109,7 @@ Use statuses from `dev/DOC_SYNC_REGISTRY.md`: `confirmed`, `unverified`, `pendin
 - Project index: confirmed after doctor and scan.
 - Doc sync registry: confirmed after doctor and scan.
 - Public docs / README: confirmed after positioning scan.
-- GitHub sync: commit `5e84619`, tag `v0.1.0`, and GitHub Release `v0.1.0` verified.
+- GitHub sync: commit `5e84619`, tag `v0.1.0`, and GitHub Release `v0.1.0` verified; release body updated during public-reader cleanup.
 - npm publish: blocked because no `package.json` exists.
 - External knowledge tools: not_applicable.
 
@@ -170,5 +171,5 @@ If this root does not match the expected project root, stop and ask for confirma
 
 Current state: PUBLIC v0.1.0 is an early public scaffold for the learning knowledge base system. The product is the AI-assisted, Obsidian-first knowledge system; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. Public positioning is now clean; do not present Agent Handoff Kit install/upgrade as the product.
 
-Recommended next step: design the first real public product package / CLI entry and minimal reproducible example before any npm publish attempt. Do not publish to npm or deploy without a real package and separate explicit validation.
+Recommended next step: commit and push the public-reader cleanup, then design the first real public product package / CLI entry and minimal reproducible example.
 ```

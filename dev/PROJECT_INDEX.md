@@ -122,7 +122,8 @@ Use this section for project-local runbooks or verified procedures for runtime-c
 |---|---|---|---|
 | Agent Handoff Kit doctor | `npx --yes @adamchanadam/agent-handoff-kit@latest doctor --root .` | closeout / governance changes / generated Markdown artifact checks | 2026-07-05 |
 | Positioning pollution scan | search public and governance docs for phrases that present Agent Handoff Kit as the product body or install target | before commit, push, release, or publishing public docs | 2026-07-05 positioning correction validated |
-| Public privacy scan | search for private local paths, OPS internal paths, credentials, Notion IDs, and unapproved outputs | before commit, push, release, or publishing public docs | 2026-07-05 |
+| Public privacy scan | search for private local paths, OPS internal paths, credentials, private knowledge-base identifiers, and unapproved outputs | before commit, push, release, or publishing public docs | 2026-07-05 |
+| Public-reader pollution scan | search README and release notes for obsolete private-tool names, internal governance lists, and release-operation reminders that do not belong in public product copy | before commit, push, release, or publishing public docs | 2026-07-05 |
 | Project governance check | Check newly created Markdown / durable artifacts against `dev/PROJECT_INDEX.md` and `dev/DOC_SYNC_REGISTRY.md`; register, sync, consolidate, or explicitly classify as temporary / one-time evidence | closeout / durable file changes | 2026-07-05 |
 
 ## Workspace Identity
@@ -133,7 +134,7 @@ Record this at closeout so the next AI can detect wrong-root or workspace drift.
 |---|---|---|
 | Expected project root | `<PUBLIC repo root>` | 2026-07-05 |
 | Git root | `<PUBLIC repo root>` | 2026-07-05 |
-| Branch / commit | `main` / `ebddfd1 Clarify public release notes format` | 2026-07-05 |
+| Branch / commit | `main` / active public-reader cleanup pending commit | 2026-07-05 |
 | Worktree or parallel workspace | PUBLIC workspace only; separate from OPS | 2026-07-05 |
 | Uncommitted change summary | PUBLIC positioning correction across README, boundary docs, docs/examples/skill placeholders, and governance files | 2026-07-05 |
 
