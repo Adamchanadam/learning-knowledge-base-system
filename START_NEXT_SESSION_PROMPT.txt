@@ -1,0 +1,16 @@
+Work in <PUBLIC repo root>.
+
+Read in order:
+1. AGENTS.md
+2. dev/SESSION_HANDOFF.md
+3. dev/SESSION_LOG.md
+4. dev/PROJECT_INDEX.md
+5. dev/RULE_PACKS.md
+
+Read dev/DOC_SYNC_REGISTRY.md before file changes or closeout.
+
+If this root does not match the expected project root, stop and ask for confirmation.
+
+Current state: PUBLIC repo is at public product version v0.1.0 and uses Agent Handoff Kit v0.3.36 as its local agentic-AI operating layer. This repo is public-facing and must not import OPS data, OPS handoff history, internal research outputs, private Notion data, local private paths, credentials, or unlicensed third-party material.
+
+Recommended next step: after the authorized commit and push, decide the first public package structure and minimum viable public example. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.

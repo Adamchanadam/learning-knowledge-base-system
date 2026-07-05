@@ -24,6 +24,6 @@ node_modules/
 
 # Private local outputs
 outputs/
-dev/
-SESSION_LOG*
-START_NEXT_SESSION_PROMPT.txt
+
+# Local Agent Handoff Kit migration evidence
+dev/governance_migrations/
