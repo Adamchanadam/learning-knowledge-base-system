@@ -13,6 +13,21 @@ Keep recent entries concise. If older entries no longer affect the next action a
 Before closeout, record whether older log detail was kept, summarized, or archived, and whether the maintenance trigger check was no-op, triggered, or backstop-driven. Do not remove validation evidence, unresolved risks, or the latest opening message.
 
 <!-- ack:log-entry:start -->
+## 2026-07-05 — PUBLIC public writing voice governance
+
+- **ID:** codex-public-writing-voice-governance
+- **Summary:** Converted Adam-approved README tone into a reusable public writing specification for future README, docs, examples, teaching copy, installation copy, and release notes.
+- **Changed:** `docs/公開文案語氣規格.md`, `docs/README.md`, `PUBLICATION_BOUNDARY.md`, `dev/PROJECT_INDEX.md`, `dev/DOC_SYNC_REGISTRY.md`, `dev/rules/writing.md`, this log.
+- **Done:** Added a single public-copy voice source of truth; registered it in the public docs index, project index, sync registry, publication boundary, and writing pack. The spec requires plain product value first, keeps infographics as a core deliverable, and blocks internal / AI-sounding public copy.
+- **QC:** Agent Handoff Kit doctor passed 51/51; `git diff --check` passed with CRLF warnings only; scan confirmed the previous broken `公開工作區ATION_BOUNDARY.md` link was removed.
+- **Evidence disposition:** Durable rule lives in `docs/公開文案語氣規格.md`; routing lives in `dev/PROJECT_INDEX.md`, `dev/DOC_SYNC_REGISTRY.md`, and `dev/rules/writing.md`; trace evidence kept here.
+- **Sync:** Local only until commit / push.
+- **Pending:** None for the governance connection.
+- **Risks:** Future public docs must read the voice spec before rewriting product copy; otherwise README tone may drift back into internal specification language.
+- **Log maintenance:** No-op; current task checkpoint only.
+<!-- ack:log-entry:end -->
+
+<!-- ack:log-entry:start -->
 ## 2026-07-05 — PUBLIC product rename to 個人知識與品味脈絡系統
 
 - **ID:** codex-public-product-rename-functional-product-name

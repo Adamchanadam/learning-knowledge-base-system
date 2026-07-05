@@ -23,6 +23,7 @@ Purpose: give a stateless AI a compact map of the PUBLIC project before it reads
 | `README.md` | public product entrypoint: what 個人知識與品味脈絡系統 is, who it serves, and current status | public-facing docs or onboarding change |
 | `PUBLICATION_BOUNDARY.md` | public/private boundary and product-vs-governance separation source of truth | before importing, publishing, syncing, or documenting content |
 | `docs/README.md` | public product documentation index | public docs change |
+| `docs/公開文案語氣規格.md` | public writing voice and product-explanation specification based on the accepted README tone | before changing README, public docs, release notes, examples, teaching copy, onboarding copy, or installation copy |
 | `docs/releases/` | public 發佈說明s written for product readers, not internal development logs | release |
 | `examples/README.md` | public reproducible examples placeholder and constraints | adding or changing examples |
 | `skill/README.md` | future 個人知識與品味脈絡系統 skill/package placeholder and constraints | adding or changing skill package content |
@@ -40,6 +41,7 @@ Purpose: give a stateless AI a compact map of the PUBLIC project before it reads
 | Public product reading | `README.md` | Start here for public understanding of the product |
 | Boundary guide | `PUBLICATION_BOUNDARY.md` | Must be read before adding public content |
 | Public docs | `docs/README.md` | Documentation index |
+| Public writing voice | `docs/公開文案語氣規格.md` | Required tone and semantic contract for public-facing product copy |
 | Public examples | `examples/README.md` | Future reproducible examples |
 | Future skill/package | `skill/README.md` | Future product capability packaging |
 | 人工智能代理 startup | `AGENTS.md` | For agent continuity only; not the product value proposition |
@@ -55,6 +57,7 @@ Reachable means the source can be found. It does not mean the source has been re
 | `PUBLICATION_BOUNDARY.md` | source of truth for what PUBLIC may contain and how to keep product-vs-governance separation | importing content, publishing, release, examples, skill packaging | local file | 2026-07-05 positioning correction |
 | `VERSION` | public product version source until 套件中繼資料 exists | public version bump | local file | 2026-07-05 |
 | `docs/README.md` | public docs boundary placeholder | adding public docs | local file | 2026-07-05 positioning correction |
+| `docs/公開文案語氣規格.md` | source of truth for public copy tone, product explanation, required mention of infographics, and anti-internal-language checks | README, public docs, release notes, examples, teaching copy, onboarding copy, installation copy | local file | 2026-07-05 README tone governance |
 | `docs/releases/v0.1.0.md` | public 發佈說明s for v0.1.0 | GitHub 發佈頁 v0.1.0 | local file | 2026-07-05 release preparation |
 | `examples/README.md` | examples boundary placeholder | adding examples | local file | 2026-07-05 positioning correction |
 | `skill/README.md` | product skill/package boundary placeholder | adding public skill package content | local file | 2026-07-05 positioning correction |
@@ -124,6 +127,7 @@ Use this section for project-local runbooks or verified procedures for runtime-c
 | Positioning pollution scan | search public and governance docs for phrases that present Agent Handoff Kit as the product body or install target | before commit, push, release, or publishing public docs | 2026-07-05 positioning correction validated |
 | Public privacy scan | search for private local paths, OPS internal paths, credentials, private knowledge-base identifiers, and unapproved outputs | before commit, push, release, or publishing public docs | 2026-07-05 |
 | Public-reader pollution scan | search README and 發佈說明s for obsolete private-tool names, internal governance lists, release-operation reminders, and maintainer action-list headings such as `## 下一步` that do not belong in public product copy | before commit, push, release, or publishing public docs | 2026-07-05 |
+| Public writing voice check | read `docs/公開文案語氣規格.md`; verify copy explains the product in plain language, keeps infographics as a core deliverable, and avoids internal / AI-sounding phrasing | before changing README, docs, examples, teaching copy, onboarding copy, install copy, or 發佈說明s | 2026-07-05 README tone governance |
 | Project governance check | Check newly created Markdown / durable artifacts against `dev/PROJECT_INDEX.md` and `dev/DOC_SYNC_REGISTRY.md`; register, sync, consolidate, or explicitly classify as temporary / one-time evidence | closeout / durable file changes | 2026-07-05 |
 
 ## Workspace Identity
@@ -143,6 +147,7 @@ Record this at closeout so the next AI can detect wrong-root or workspace drift.
 | Change type | Likely files | Required checks |
 |---|---|---|
 | Public product positioning | `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, `examples/README.md`, `skill/README.md`, `dev/SESSION_HANDOFF.md`, `dev/PROJECT_INDEX.md` | positioning pollution scan + privacy scan + diff check |
+| Public writing voice / teaching copy | `README.md`, `docs/公開文案語氣規格.md`, public docs, examples, release notes, teaching or installation copy | public writing voice check + public-reader pollution scan + privacy scan |
 | Public product 套件 / 命令列入口 | future package files, `README.md`, `docs/`, `examples/`, `skill/` | product tests + public docs + privacy scan |
 | Public version bump | `VERSION`, `README.md`, `PUBLICATION_BOUNDARY.md`, `dev/PROJECT_INDEX.md` Stack | version consistent across files + user-facing 發佈說明s format applied |
 | Public boundary behavior | `PUBLICATION_BOUNDARY.md`, `README.md`, `docs/README.md`, `examples/README.md`, `skill/README.md` | privacy scan + no OPS data imported |
