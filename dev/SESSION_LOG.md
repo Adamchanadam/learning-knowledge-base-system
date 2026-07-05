@@ -16,7 +16,7 @@ Before closeout, record whether older log detail was kept, summarized, or archiv
 ## 2026-07-05 — PUBLIC Agent Handoff Kit integration
 
 - **ID:** codex-public-agent-handoff-kit-integration
-- **Summary:** Installed Agent Handoff Kit v0.3.36 into PUBLIC and added README-centered public install/upgrade guidance, removed premature INSTALL/UPGRADE docs, and documented OPS-to-PUBLIC release sync, bumped PUBLIC to v0.1.0, and added a fixed-format Traditional Chinese user-facing changelog without importing OPS data.
+- **Summary:** Installed Agent Handoff Kit v0.3.36 into PUBLIC and added README-centered public install/upgrade guidance, removed premature INSTALL/UPGRADE docs, and documented OPS-to-PUBLIC release sync, bumped PUBLIC to v0.1.0, removed the mistaken standalone update-log file, and defined a fixed user-benefit release notes format without importing OPS data.
 - **Changed:** `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `START_NEXT_SESSION_PROMPT.txt`, `dev/*`, `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, README-centered install/upgrade content.
 - **Done:** Fresh-installed Agent Handoff Kit using the official `init --yes --root .` flow; wrote PUBLIC-specific handoff, project index, sync registry, install guide, upgrade guide, and boundary text.
 - **QC:** Initial doctor ran and flagged unregistered durable docs; final validation pending after all governance updates.

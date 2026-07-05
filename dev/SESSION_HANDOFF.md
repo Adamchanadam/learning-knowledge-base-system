@@ -36,7 +36,7 @@ This is the current-state area. At every full closeout, rewrite or explicitly co
 - Task essence: Fresh-install Agent Handoff Kit into PUBLIC, then document user-facing install and upgrade flows.
 - User value: A public repo that can be operated by AI agents consistently across sessions without exposing private OPS material.
 <!-- ack:field:success-criteria -->
-- Success criteria: PUBLIC has Agent Handoff Kit files, README-based install/upgrade guidance, OPS-to-PUBLIC release-flow guidance, v0.1.0 version bump, and user-facing changelog, registered durable artifacts, passing doctor, and a private-data scan showing no leaked OPS/private content beyond boundary warnings.
+- Success criteria: PUBLIC has Agent Handoff Kit files, README-based install/upgrade guidance, OPS-to-PUBLIC release-flow guidance, v0.1.0 version bump, and user-facing release notes format, registered durable artifacts, passing doctor, and a private-data scan showing no leaked OPS/private content beyond boundary warnings.
 - Key background already read: PUBLIC `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, official Agent Handoff Kit GitHub repo, official AI install page.
 - Background still unread or blocked: none for current integration; future product docs and examples still need design.
 - Non-goals / boundaries: Do not copy OPS `dev/`, `outputs/`, session logs, internal decisions, private Notion identifiers, credentials, local private paths, or unlicensed third-party material into PUBLIC.
@@ -58,7 +58,9 @@ Record only work actually completed in the current session.
 
 Recommended next step: after this authorized commit and push, continue with the first public product/package structure decision — reason: tag, GitHub release, npm publish, and deploy are still separate release actions.
 
-1. Commit and push the authorized PUBLIC v0.1.0 changes.\r\n2. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.\r\n3. Next product step: decide the first public package structure and user-facing minimum viable example.
+1. Commit and push the authorized PUBLIC v0.1.0 correction.
+2. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.
+3. Next product step: decide the first public package structure and user-facing minimum viable example.
 
 <!-- ack:section:next-task-required-reading -->
 ## Next Task Required Reading
@@ -69,7 +71,6 @@ Before acting on the next task, read or mark blocked:
 |---|---|---|
 | `PUBLICATION_BOUNDARY.md` | Defines what PUBLIC may and may not contain | required |
 | `README.md` | Public user entrypoint, install/upgrade single source, OPS/PUBLIC role split, release sync flow, and version summary | required |
-| `CHANGELOG.md` | User-facing Traditional Chinese release notes | required before public release notes or version bump |
 | `VERSION` | Public product version source until package metadata exists | required before version bump |
 | `dev/PROJECT_INDEX.md` | PUBLIC file map and governance registry | required before file changes |
 | `dev/DOC_SYNC_REGISTRY.md` | Sync obligations for docs, governance, and release boundaries | required before file changes or closeout |
@@ -96,7 +97,7 @@ Git root: `<PUBLIC repo root>`
 Branch: `main`
 Commit: `c38a104 Initialize public release scaffold`
 Worktree / parallel workspace status: PUBLIC root only; separate from OPS workspace.
-Uncommitted changes summary: Agent Handoff Kit fresh install plus README-centered public install/upgrade, OPS/PUBLIC role split, release-flow governance updates, v0.1.0 bump, and changelog.
+Uncommitted changes summary: Agent Handoff Kit fresh install plus README-centered public install/upgrade, OPS/PUBLIC role split, release-flow governance updates, v0.1.0 bump, and release notes format correction.
 
 <!-- ack:section:sync-status -->
 ## Sync Status

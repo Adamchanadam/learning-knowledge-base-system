@@ -24,7 +24,6 @@ Purpose: give a stateless AI a compact map of the project before it reads or edi
 | `GEMINI.md` | Google Antigravity CLI / Gemini CLI migration bridge to the same startup path | Antigravity / Gemini startup |
 | `START_NEXT_SESSION_PROMPT.txt` | auto-generated stateful startup prompt for the next local-agent session; `dev/SESSION_HANDOFF.md` remains authoritative | next session startup |
 | `README.md` | public repo entrypoint, install/upgrade single source of truth, OPS-to-PUBLIC release flow, version summary, and boundary summary | public-facing docs or onboarding change |
-| `CHANGELOG.md` | Traditional Chinese user-facing release notes in a fixed non-developer format | public version bump / release notes change |
 | `VERSION` | public product version source for this repo until a package manifest exists | version bump |
 | `PUBLICATION_BOUNDARY.md` | public/private boundary source of truth | before importing, publishing, syncing, or documenting content |
 | `docs/README.md` | public documentation index | public docs change |
@@ -49,7 +48,6 @@ Reachable means the source can be found. It does not mean the source has been re
 | Source | Role | Required before | Access method | Last verified |
 |---|---|---|---|---|
 | `README.md` | public entrypoint and current public status | public docs, onboarding, install/upgrade wording, version summary | local file | 2026-07-05 |
-| `CHANGELOG.md` | user-facing release notes | public release notes / version bump | local file | 2026-07-05 |
 | `VERSION` | public product version source until package metadata exists | public version bump | local file | 2026-07-05 |
 | `PUBLICATION_BOUNDARY.md` | source of truth for what PUBLIC may contain | importing content, publishing, release, examples, skill packaging | local file | 2026-07-05 |
 | `examples/README.md` | examples boundary placeholder | adding examples | local file | 2026-07-05 |
@@ -134,21 +132,21 @@ Record this at closeout so the next AI can detect wrong-root or workspace drift.
 | Git root | `<PUBLIC repo root>` | 2026-07-05 |
 | Branch / commit | `main` / `c38a104 Initialize public release scaffold` | 2026-07-05 |
 | Worktree or parallel workspace | PUBLIC workspace only; separate from OPS | 2026-07-05 |
-| Uncommitted change summary | Agent Handoff Kit install plus README-centered public install/upgrade, OPS/PUBLIC release flow, v0.1.0 bump, and changelog updates | 2026-07-05 |
+| Uncommitted change summary | Agent Handoff Kit install plus README-centered public install/upgrade, OPS/PUBLIC release flow, v0.1.0 bump, and user-facing release notes format correction | 2026-07-05 |
 
 ## Change Hotspots
 
 | Change type | Likely files | Required checks |
 |---|---|---|
 | Public install behavior | `README.md`, `dev/PROJECT_INDEX.md` Tool Operation References | official install page read + doctor |
-| Public version bump | `VERSION`, `CHANGELOG.md`, `README.md`, `dev/PROJECT_INDEX.md` Stack | version consistent across files + user-facing notes updated |
+| Public version bump | `VERSION`, `README.md`, `PUBLICATION_BOUNDARY.md`, `dev/PROJECT_INDEX.md` Stack | version consistent across files + user-facing release notes format applied |
 | Public upgrade behavior | `README.md`, `dev/PROJECT_INDEX.md` Tool Operation References | official install page read + dry-run guidance checked |
 | Public boundary behavior | `PUBLICATION_BOUNDARY.md`, `README.md`, `docs/README.md`, `examples/README.md`, `skill/README.md` | privacy scan + no OPS data imported |
 | Governance behavior | `AGENTS.md`, `dev/*` | doctor + doc sync registry |
 | Generated Markdown or durable artifact | `docs/`, root Markdown files, `examples/`, `skill/` | classify as indexed / synced / temporary / one-time evidence; update `dev/PROJECT_INDEX.md` or `dev/DOC_SYNC_REGISTRY.md` when durable |
 | Closeout/startup contract | `AGENTS.md`, `START_NEXT_SESSION_PROMPT.txt`, `dev/SESSION_HANDOFF.md`, `dev/SESSION_LOG.md`, `dev/PROJECT_INDEX.md` | opening message present + workspace identity current + prompt file regenerated from handoff at closeout |
 | OPS-to-PUBLIC release sync | README.md, PUBLICATION_BOUNDARY.md, public product files added later | OPS candidate reviewed, private data removed, PUBLIC checks passed |
-| Release or publish | README, CHANGELOG.md, VERSION, docs, GitHub release/tag/package metadata if added later | explicit user approval + privacy scan + doctor |
+| Release or publish | README, VERSION, PUBLICATION_BOUNDARY.md, docs, GitHub release/tag/package metadata if added later | explicit user approval + privacy scan + doctor |
 
 ## External Services
 
