@@ -11,6 +11,6 @@ Read dev/DOC_SYNC_REGISTRY.md before file changes or closeout.
 
 If this root does not match the expected project root, stop and ask for confirmation.
 
-Current state: PUBLIC v0.1.0 is an early public scaffold for 意脈系統. The product is the AI-assisted, Obsidian-first system for knowledge, association, and taste-building; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. Public positioning is now clean; do not present Agent Handoff Kit install/upgrade as the product.
+Current state: 公開倉庫 v0.1.0 是「個人知識與品味脈絡系統」的早期公開骨架；產品主體是整理知識、建立聯想與累積品味脈絡。Agent Handoff Kit 只作底層人工智能協作與接續機制，不是公開產品本體。
 
-Recommended next step: design the first real public product package / CLI entry and minimal reproducible example.
+Recommended next step: 設計第一個真正的公開套件／命令列入口和最小可重現示例。

@@ -1,4 +1,4 @@
-# Session Log
+﻿# Session Log
 
 <!-- ack:section:session-log-preamble -->
 
@@ -13,15 +13,15 @@ Keep recent entries concise. If older entries no longer affect the next action a
 Before closeout, record whether older log detail was kept, summarized, or archived, and whether the maintenance trigger check was no-op, triggered, or backstop-driven. Do not remove validation evidence, unresolved risks, or the latest opening message.
 
 <!-- ack:log-entry:start -->
-## 2026-07-05 — PUBLIC product rename to 意脈系統
+## 2026-07-05 — PUBLIC product rename to 個人知識與品味脈絡系統
 
-- **ID:** codex-public-product-rename-yimai
-- **Summary:** Renamed the public product from the old knowledge-base-oriented name to `意脈系統`, a name aligned with knowledge, association, and taste-building.
+- **ID:** codex-public-product-rename-functional-product-name
+- **Summary:** Renamed the public product from the old knowledge-base-oriented name to `個人知識與品味脈絡系統`, a name aligned with knowledge, association, and taste-building.
 - **Changed:** `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, `docs/releases/v0.1.0.md`, `examples/README.md`, `skill/README.md`, `START_NEXT_SESSION_PROMPT.txt`, `dev/DOC_SYNC_REGISTRY.md`, `dev/PROJECT_INDEX.md`, `dev/SESSION_HANDOFF.md`, this log.
 - **Done:** Updated the product display name and positioning text while leaving the GitHub repository URL unchanged.
-- **QC:** Rename scan passed with no old display-name matches; public-reader pollution scan passed for README and release note; Agent Handoff Kit doctor passed 51/51; `git diff --check` passed with CRLF warnings only; GitHub Release body was updated and read back.
+- **QC:** Rename scan passed with no old display-name matches; public-reader pollution scan passed for README and 發佈說明; Agent Handoff Kit doctor passed 51/51; `git diff --check` passed with CRLF warnings only; GitHub 發佈頁 body was updated and 讀回.
 - **Evidence disposition:** Current product identity is in `dev/PROJECT_INDEX.md` and `dev/SESSION_HANDOFF.md`; trace evidence kept here.
-- **Sync:** Commit `90ab4b3` pushed to `main`; GitHub Release v0.1.0 body updated and read back; remote README read-back contains `意脈系統` and the rename / public-reader scan returned zero matches.
+- **Sync:** Commit `90ab4b3` pushed to `main`; GitHub 發佈頁 v0.1.0 body updated and 讀回; remote README read-back contains `個人知識與品味脈絡系統` and the rename / public-reader scan returned zero matches.
 - **Pending:** None for this rename cleanup.
 - **Risks:** Repository URL still contains the old slug; treat it as a coordinate, not the display name.
 - **Log maintenance:** No-op; rename correction checkpoint.
@@ -34,7 +34,7 @@ Before closeout, record whether older log detail was kept, summarized, or archiv
 - **Summary:** Removed the public README `下一步` section after Adam identified it as internal action messaging with no user value.
 - **Changed:** `README.md`, `dev/PROJECT_INDEX.md`, `dev/SESSION_HANDOFF.md`, this log.
 - **Done:** Deleted the maintainer action-list section from README and tightened public-reader validation so README must not contain public-facing maintainer action headings.
-- **QC:** Local README action-list scan passed; public-reader pollution scan passed for README and v0.1.0 release note; Agent Handoff Kit doctor passed 51/51 using `C:\tmp\npm-cache`; `git diff --check` passed with CRLF warnings only.
+- **QC:** Local README action-list scan passed; public-reader pollution scan passed for README and v0.1.0 發佈說明; Agent Handoff Kit doctor passed 51/51 using `C:\tmp\npm-cache`; `git diff --check` passed with CRLF warnings only.
 - **Evidence disposition:** Current rule added to `dev/PROJECT_INDEX.md`; trace evidence kept here.
 - **Sync:** Commit `dcc2e18` pushed to `main`; remote README read-back public-reader scan returned zero matches.
 - **Pending:** None for this cleanup.
@@ -46,12 +46,12 @@ Before closeout, record whether older log detail was kept, summarized, or archiv
 ## 2026-07-05 — PUBLIC public-reader cleanup
 
 - **ID:** codex-public-reader-cleanup
-- **Summary:** Follow-up correction after Adam identified that README and GitHub Release copy still exposed internal release-boundary language and obsolete private-tool wording.
+- **Summary:** Follow-up correction after Adam identified that README and GitHub 發佈頁 copy still exposed internal release-boundary language and obsolete private-tool wording.
 - **Changed:** `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/releases/v0.1.0.md`, `examples/README.md`, `skill/README.md`, `dev/SESSION_HANDOFF.md`, `dev/PROJECT_INDEX.md`, `START_NEXT_SESSION_PROMPT.txt`, this log.
-- **Done:** Removed the internal boundary list from the public README, rewrote v0.1.0 release notes for public readers, replaced obsolete private-tool wording with generic private knowledge-base wording, and added public-reader pollution scanning as a required validation layer.
-- **QC:** Public-reader pollution scan passed for README and v0.1.0 release note; selected public docs have zero obsolete private-tool-name matches; Agent Handoff Kit doctor passed 51/51 using `C:\tmp\npm-cache`; `git diff --check` passed with CRLF warnings only; GitHub Release body was edited and read back clean.
+- **Done:** Removed the internal boundary list from the public README, rewrote v0.1.0 發佈說明s for public readers, replaced obsolete private-tool wording with generic private knowledge-base wording, and added public-reader pollution scanning as a required validation layer.
+- **QC:** Public-reader pollution scan passed for README and v0.1.0 發佈說明; selected public docs have zero obsolete private-tool-name matches; Agent Handoff Kit doctor passed 51/51 using `C:\tmp\npm-cache`; `git diff --check` passed with CRLF warnings only; GitHub 發佈頁 body was edited and 讀回 clean.
 - **Evidence disposition:** Current correction absorbed into `dev/SESSION_HANDOFF.md`; validation rule added to `dev/PROJECT_INDEX.md`; trace evidence kept here.
-- **Sync:** GitHub Release v0.1.0 body updated and read back; public cleanup committed and pushed; remote README public-reader scan returned zero matches.
+- **Sync:** GitHub 發佈頁 v0.1.0 body updated and 讀回; public cleanup committed and pushed; remote README public-reader scan returned zero matches.
 - **Pending:** None for this cleanup.
 - **Risks:** Previous validation missed public-copy pollution because it checked product-positioning and privacy only, not public-reader suitability.
 - **Log maintenance:** No-op; corrective evidence checkpoint.
@@ -61,14 +61,14 @@ Before closeout, record whether older log detail was kept, summarized, or archiv
 ## 2026-07-05 — PUBLIC GitHub release v0.1.0
 
 - **ID:** codex-public-release-v0.1.0
-- **Summary:** Published the corrected PUBLIC positioning as Git commit, push, tag, and GitHub Release.
+- **Summary:** Published the corrected PUBLIC positioning as Git commit, push, tag, and GitHub 發佈頁.
 - **Changed:** `dev/SESSION_HANDOFF.md`, `dev/SESSION_LOG.md`, `START_NEXT_SESSION_PROMPT.txt`.
-- **Done:** Commit `5e84619` pushed to `main`; tag `v0.1.0` pushed; GitHub Release `v0.1.0｜公開定位糾偏後的產品起點` created and read back.
+- **Done:** Commit `5e84619` pushed to `main`; tag `v0.1.0` pushed; GitHub 發佈頁 `v0.1.0｜公開定位糾偏後的產品起點` created and 讀回.
 - **QC:** Agent Handoff Kit doctor passed 51/51; positioning scan passed; privacy scan found no actual secrets; `git diff --check` passed with CRLF warnings only.
 - **Evidence disposition:** Current release facts absorbed into `dev/SESSION_HANDOFF.md`; trace evidence kept here.
-- **Sync:** GitHub Release: https://github.com/Adamchanadam/learning-knowledge-base-system/releases/tag/v0.1.0.
+- **Sync:** GitHub 發佈頁: https://github.com/Adamchanadam/learning-knowledge-base-system/releases/tag/v0.1.0.
 - **Pending:** npm publish is blocked until this repo has a real product package and `package.json`.
-- **Risks:** GitHub Release is not npm publication.
+- **Risks:** GitHub 發佈頁 is not npm publication.
 - **Log maintenance:** No-op; release evidence checkpoint.
 <!-- ack:log-entry:end -->
 
@@ -78,7 +78,7 @@ Before closeout, record whether older log detail was kept, summarized, or archiv
 - **ID:** codex-public-positioning-correction
 - **Summary:** Corrected PUBLIC docs and governance after Adam identified that the repo wrongly presented Agent Handoff Kit as the public product instead of the bottom AI collaboration layer.
 - **Changed:** `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, `examples/README.md`, `skill/README.md`, `dev/SESSION_HANDOFF.md`, `dev/PROJECT_INDEX.md`, `dev/DOC_SYNC_REGISTRY.md`, `START_NEXT_SESSION_PROMPT.txt`, this log.
-- **Done:** Reframed the public product as `意脈系統`: an AI-assisted, Obsidian-first system for knowledge, association, and taste-building that turns sources into reusable knowledge, personal judgment, cross-source association, taste signals, and outcome pages. Reclassified Agent Handoff Kit as governance / continuity infrastructure only.
+- **Done:** Reframed the public product as `個人知識與品味脈絡系統`: an 人工智能協助, 以 Obsidian 優先 system for knowledge, association, and taste-building that turns sources into reusable knowledge, personal judgment, cross-source association, taste signals, and outcome pages. Reclassified Agent Handoff Kit as governance / continuity infrastructure only.
 - **QC:** Agent Handoff Kit doctor passed 51/51; positioning forbidden-phrase scan returned no matches; remaining Agent Handoff Kit mentions were reviewed as bottom-layer / governance context; privacy scan found only boundary-rule text and handoff marker names, not actual secrets or private paths; `git diff --check` passed with CRLF warnings only.
 - **Evidence disposition:** Current corrected state absorbed into `dev/SESSION_HANDOFF.md`; file map and checks updated in `dev/PROJECT_INDEX.md`; sync rows updated in `dev/DOC_SYNC_REGISTRY.md`; this entry preserves trace evidence.
 - **Sync:** PUBLIC docs and governance were updated locally only. No commit, push, tag, GitHub release, npm publish, deploy, credential operation, or permission change.
@@ -104,9 +104,9 @@ Read dev/DOC_SYNC_REGISTRY.md before file changes or closeout.
 
 If this root does not match the expected project root, stop and ask for confirmation.
 
-Current state: PUBLIC v0.1.0 is an early public scaffold for 意脈系統. The product is the AI-assisted, Obsidian-first system for knowledge, association, and taste-building; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. The local positioning correction has passed validation. Do not present Agent Handoff Kit install/upgrade as the product.
+Current state: PUBLIC v0.1.0 is an early public scaffold for 個人知識與品味脈絡系統. The product is the 人工智能協助, 以 Obsidian 優先 system for knowledge, association, and taste-building; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. The local positioning correction has passed validation. Do not present Agent Handoff Kit install/upgrade as the product.
 
-Recommended next step: decide whether to commit and push the validated PUBLIC positioning correction. After that, design the first real public product package / CLI entry and minimal reproducible example. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.
+Recommended next step: decide whether to commit and push the validated PUBLIC positioning correction. After that, design the first real public product 套件 / 命令列入口 entry and minimal reproducible example. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.
 ```
 <!-- ack:log-entry:end -->
 
