@@ -13,10 +13,48 @@ Keep recent entries concise. If older entries no longer affect the next action a
 Before closeout, record whether older log detail was kept, summarized, or archived, and whether the maintenance trigger check was no-op, triggered, or backstop-driven. Do not remove validation evidence, unresolved risks, or the latest opening message.
 
 <!-- ack:log-entry:start -->
+## 2026-07-05 — PUBLIC product positioning correction
+
+- **ID:** codex-public-positioning-correction
+- **Summary:** Corrected PUBLIC docs and governance after Adam identified that the repo wrongly presented Agent Handoff Kit as the public product instead of the bottom AI collaboration layer.
+- **Changed:** `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, `examples/README.md`, `skill/README.md`, `dev/SESSION_HANDOFF.md`, `dev/PROJECT_INDEX.md`, `dev/DOC_SYNC_REGISTRY.md`, `START_NEXT_SESSION_PROMPT.txt`, this log.
+- **Done:** Reframed the public product as `學習型知識庫系統`: an AI-assisted, Obsidian-first knowledge system that turns sources into reusable knowledge, personal application judgment, cross-source insight, and outcome pages. Reclassified Agent Handoff Kit as governance / continuity infrastructure only.
+- **QC:** Agent Handoff Kit doctor passed 51/51; positioning forbidden-phrase scan returned no matches; remaining Agent Handoff Kit mentions were reviewed as bottom-layer / governance context; privacy scan found only boundary-rule text and handoff marker names, not actual secrets or private paths; `git diff --check` passed with CRLF warnings only.
+- **Evidence disposition:** Current corrected state absorbed into `dev/SESSION_HANDOFF.md`; file map and checks updated in `dev/PROJECT_INDEX.md`; sync rows updated in `dev/DOC_SYNC_REGISTRY.md`; this entry preserves trace evidence.
+- **Sync:** PUBLIC docs and governance were updated locally only. No commit, push, tag, GitHub release, npm publish, deploy, credential operation, or permission change.
+- **Pending:** Ask whether to commit and push the correction.
+- **Risks:** If this correction is not committed, GitHub README remains polluted at `ebddfd1`.
+- **Log maintenance:** No-op; second PUBLIC Agent Handoff Kit session log entry.
+
+### Next Session Opening Message
+
+📋 Next session: agent-managed startup content below
+
+```text
+Work in <PUBLIC repo root>.
+
+Read in order:
+1. AGENTS.md
+2. dev/SESSION_HANDOFF.md
+3. dev/SESSION_LOG.md
+4. dev/PROJECT_INDEX.md
+5. dev/RULE_PACKS.md
+
+Read dev/DOC_SYNC_REGISTRY.md before file changes or closeout.
+
+If this root does not match the expected project root, stop and ask for confirmation.
+
+Current state: PUBLIC v0.1.0 is an early public scaffold for the learning knowledge base system. The product is the AI-assisted, Obsidian-first knowledge system; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. The local positioning correction has passed validation. Do not present Agent Handoff Kit install/upgrade as the product.
+
+Recommended next step: decide whether to commit and push the validated PUBLIC positioning correction. After that, design the first real public product package / CLI entry and minimal reproducible example. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.
+```
+<!-- ack:log-entry:end -->
+
+<!-- ack:log-entry:start -->
 ## 2026-07-05 — PUBLIC Agent Handoff Kit integration
 
 - **ID:** codex-public-agent-handoff-kit-integration
-- **Summary:** Installed Agent Handoff Kit v0.3.36 into PUBLIC and added README-centered public install/upgrade guidance, removed premature INSTALL/UPGRADE docs, and documented OPS-to-PUBLIC release sync, bumped PUBLIC to v0.1.0, removed the mistaken standalone update-log file, and defined a fixed user-benefit release notes format without importing OPS data.
+- **Summary:** Installed Agent Handoff Kit v0.3.36 into PUBLIC and added an early README framing that was later found to misposition the bottom collaboration layer as the product. This entry is retained as history; the corrected product positioning is recorded in the 2026-07-05 PUBLIC product positioning correction entry above.
 - **Changed:** `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `START_NEXT_SESSION_PROMPT.txt`, `dev/*`, `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, README-centered install/upgrade content.
 - **Done:** Fresh-installed Agent Handoff Kit using the official `init --yes --root .` flow; wrote PUBLIC-specific handoff, project index, sync registry, install guide, upgrade guide, and boundary text.
 - **QC:** Initial doctor ran and flagged unregistered durable docs; final validation pending after all governance updates.

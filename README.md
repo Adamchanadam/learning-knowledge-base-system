@@ -1,132 +1,95 @@
-# 學習型知識庫系統 PUBLIC
+# 學習型知識庫系統
 
-這個 repo 是面向公眾的 GitHub / npm 產品發佈面。它不是 OPS 工作區的鏡像，也不是私人 Notion、治理紀錄、研發證據或 session log 的發佈出口。
+學習型知識庫系統是一個由 AI agent 協助運作的個人知識系統。它的目標不是把網頁暫存起來，而是把文章、文件、網址與想法轉化成可反覆使用的知識、個人判斷與下一步行動。
 
-目前版本：v0.1.0。公開發佈骨架已接入 Agent Handoff Kit 底層機制；尚未是可正式使用的完整產品版本。
+目前版本：v0.1.0。這是早期公開版本，先公開產品定位、發佈邊界與後續封裝方向；完整安裝包、命令列工具與可重現示例仍在整理中。
+
+## 這個系統做什麼
+
+- 從公開 URL 或可讀文字擷取來源內容。
+- 將來源整理成知識點、來源摘要與可檢查的引用基礎。
+- 判斷內容對使用者的實際用途，而不是只做摘要。
+- 連接多個來源，形成補底、加深、連接、修正與行動五類跨來源洞見。
+- 以 Obsidian-first 的方式保存長期可累積的知識庫。
+- 產出面向閱讀與決策的知識成果頁，而不是 AI 任務流水帳。
+
+## 適合誰
+
+- 想把閱讀、研究、工作資料與生活觀察沉澱成第二大腦的人。
+- 想讓 AI 幫忙做來源整理，但不想失去可追溯依據的人。
+- 想把知識連到個人決策、品味、行動與長期項目的人。
+- 想建立本地優先、可逐步公開封裝的個人知識工作流的人。
+
+## 目前狀態
+
+v0.1.0 是公開發佈骨架，不是完整可安裝產品。
+
+已公開：
+
+- 產品定位與公開邊界。
+- 未來文件、示例與技能封裝入口。
+- PUBLIC 倉庫的 AI 協作基礎，方便之後穩定開發、升級與交接。
+
+尚未公開為完整產品：
+
+- npm package。
+- 可直接安裝的 CLI。
+- 可重現的公開示例資料。
+- 產品級部署流程。
+
+## 底層協作機制
+
+本倉庫使用 Agent Handoff Kit 作為 AI 協作、跨 session 接續、健康檢查與治理狀態保存的底層機制。它不是本產品的功能主體。
+
+對使用者而言，產品主體是「學習型知識庫系統」：來源擷取、知識點、Obsidian-first 知識庫、跨來源洞見與成果頁。Agent Handoff Kit 只負責讓 AI agent 在這個倉庫內可靠地接續工作、升級治理檔案、保存交接狀態。
+
+## 未來安裝方向
+
+公開版的正式安裝方式會以「學習型知識庫系統」自身的 package、CLI 或 agent 指令為入口。Agent Handoff Kit 只會作為底層依賴或治理基座，不會被包裝成產品本體。
+
+在完整 package 出現前，請不要把本 README 當成最終安裝教學。當前倉庫主要供早期審閱產品定位、公開邊界與後續封裝方向。
 
 ## 版本與發佈說明
 
-- 最新版本：v0.1.0
-- 發佈說明不是技術改動流水帳。每次撰寫 release notes 時，必須用用戶立場說明這次更新帶來的直接好處、是否需要行動，以及安裝／升級方式。
-
-### v0.1.0 發佈說明
+### v0.1.0
 
 | 欄位 | 內容 |
 |---|---|
-| 這次更新帶來什麼 | PUBLIC repo 已建立公眾產品發佈骨架，並接入 Agent Handoff Kit 底層機制。 |
-| 對用戶有什麼直接好處 | 用戶可以用 AI agent 進行安裝、升級、開工與收工，不需要先理解內部治理文件。 |
-| 用戶需要做什麼 | 新用戶依下方 AI agent 入口開始；已有使用者可先做升級預演，再正式升級。 |
-| 安裝與升級 | 安裝與升級入口維持在本 README。 |
-| 注意事項 | PUBLIC 不包含 OPS 的資料、交接歷史、內部研發輸出、私人 Notion 資料、本機私人路徑或憑證。 |
+| 這次更新帶來什麼 | 建立「學習型知識庫系統」公開倉庫的產品定位與發佈邊界。 |
+| 對用戶有什麼直接好處 | 使用者可以先理解這個系統要解決的問題、目前狀態與未來安裝方向，不會把底層協作機制誤當成產品。 |
+| 用戶需要做什麼 | 暫時不需要安裝；等待後續公開 package、CLI 或可重現示例。 |
+| 安裝與升級 | 尚未提供正式產品安裝入口。 |
+| 注意事項 | 本倉庫不包含 OPS 私有研發資料、交接歷史、私人 Notion 資料、本機私人路徑或憑證。 |
 
-## 產品入口
+## 倉庫目錄
 
-這個產品的主要使用入口是 agentic AI。用戶應可用自然語言要求 AI agent 安裝、升級和接續工作，而不是先理解內部治理文件。
+- `docs/`：未來公開產品文件。
+- `examples/`：未來可重現公開示例。
+- `skill/`：未來產品技能或本地代理封裝。
+- `PUBLICATION_BOUNDARY.md`：公開發佈邊界與私有資料排除規則。
+- `AGENTS.md`、`dev/`、`START_NEXT_SESSION_PROMPT.txt`：AI 協作與交接基礎，不是一般使用者必讀內容。
 
-首次安裝或升級 Agent Handoff Kit：
+## 發佈邊界
 
-```text
-請讀取 https://adamchanadam.github.io/agent-handoff-kit/agent-handoff-kit-ai-install.html，並在這個資料夾安裝或升級 Agent Handoff Kit。
-```
+可公開：
 
-日常接續工作：
+- 產品用途、限制、使用方式與示例。
+- 經清理後、不依賴私人資料的知識庫樣本。
+- 可公開授權的程式碼、技能檔、模板與 package 內容。
 
-```text
-Start Agent Handoff
-```
+不可公開：
 
-中文可說：
-
-```text
-開工
-```
-
-結束本輪工作並保存交接：
-
-```text
-收工
-```
-
-若 AI agent 尚未指向本資料夾，才使用帶路徑啟動句：
-
-```text
-Work in <你的專案資料夾>. Read AGENTS.md first, then Start Agent Handoff. Before changing anything, tell me the current state and your recommended next step.
-```
-
-## 安裝與升級原則
-
-安裝與升級是 PUBLIC 產品的基本能力，主真源放在本 README，而不是拆成額外安裝文件。
-
-- 安裝與升級均使用 [`Adamchanadam/agent-handoff-kit`](https://github.com/Adamchanadam/agent-handoff-kit)。
-- PUBLIC 採用與 OPS 一致的 Agent Handoff Kit 底層機制。
-- PUBLIC 不接入 OPS 的資料、交接歷史或內部研發內容。
-- 未來若加入 npm package，`package.json`、CLI 命令、版本策略、健康檢查與升級預演才是安裝／升級的產品實作層。
-- README 只保留公眾用戶需要知道的最短入口與驗收原則。
-
-升級必須先預演，無衝突才正式升級：
-
-```text
-npx --yes @adamchanadam/agent-handoff-kit@latest upgrade --dry-run --root .
-```
-
-```text
-npx --yes @adamchanadam/agent-handoff-kit@latest upgrade --yes --root .
-```
-
-安裝或升級後必須通過健康檢查：
-
-```text
-npx --yes @adamchanadam/agent-handoff-kit@latest doctor --root .
-```
-
-## OPS 與 PUBLIC 的角色
-
-| 目錄 | 角色 | 可包含 | 不可包含 |
-|---|---|---|---|
-| OPS | 私有研發、驗收、治理和內部證據工作區 | 研發輸出、實驗紀錄、內部交接、驗收證據、私人資料來源 | 不能直接作為公眾發佈面 |
-| PUBLIC | 公眾 GitHub / npm 產品發佈面 | README、公開文件、清理後示例、可公開技能或套件內容、PUBLIC 專用 Agent Handoff Kit 狀態 | OPS 的 `dev/`、`outputs/`、session log、內部決策紀錄、私人 Notion 資料、憑證、本機私人路徑 |
-
-兩者的關係是「OPS 產出候選內容，PUBLIC 承接清理後的產品發佈內容」。同步方向只應由 OPS 到 PUBLIC，且每次都要經過人工或 AI 明確審核；PUBLIC 不反向污染 OPS，也不自動吸收 OPS 全量內容。
-
-## 從 OPS 同步到 PUBLIC 的發佈流程
-
-當 OPS 開發完成並通過驗收後，不能直接複製整個資料夾到 PUBLIC。正確流程是：
-
-1. 在 OPS 確認候選成果已完成驗收，列出要公開的能力、文件、示例或套件內容。
-2. 判斷每項內容是否可公開；剔除私人資料、內部交接、研發證據、本機路徑、未授權第三方素材和憑證。
-3. 把可公開內容改寫成 PUBLIC 產品語言：README、公開文件、示例、技能封裝或 npm package 結構。
-4. 在 PUBLIC 更新對應文件與產品檔案，不搬入 OPS 的 `dev/`、`outputs/` 或 session log。
-5. 在 PUBLIC 跑健康檢查、私隱掃描、差異檢查與必要產品測試。
-6. 檢查通過後才可提交 PUBLIC 變更。
-7. GitHub push、tag、release、npm publish 或部署，都需要另行明確授權。
-
-## 邊界
-
-可放入這裡的內容：
-
-- 面向公眾的產品說明。
-- 可公開的安裝、升級、使用和示例內容。
-- 經清理後的技能、工具或本地代理封裝。
-- 不含私人資料、Notion 路徑、憑證、內部治理紀錄的示例。
-- Agent Handoff Kit 的公開操作機制。
-
-不可放入這裡的內容：
-
-- OPS 工作區的 `dev/`、`outputs/`、session log 或內部決策紀錄。
+- OPS 工作區的內部交接、研發證據、私有輸出與治理流水帳。
 - Adam 個人 Notion 資料、資料庫 ID、頁面 ID、私人本機路徑或截圖。
-- API key、token、credential、個人設定或可還原機密的片段。
-- 尚未清理來源權限的文章全文、圖片或第三方內容。
-
-## 目錄
-
-- `AGENTS.md`：AI agent 的公開倉庫操作入口。
-- `START_NEXT_SESSION_PROMPT.txt`：下一次接續工作的便利提示副本。
-- `dev/`：Agent Handoff Kit 的 PUBLIC 專用治理狀態。
-- `docs/`：未來公開文件入口；目前不承擔安裝／升級主真源。
-- `examples/`：公開示例入口。
-- `skill/`：未來技能或本地代理封裝入口。
-- `PUBLICATION_BOUNDARY.md`：公開發佈邊界。
+- API key、token、credential 或任何可還原機密的片段。
+- 未確認授權的第三方全文、圖片、PDF 或資料集。
 
 ## 下一步
 
-先補齊最小可用產品說明、可清理示例和未來 npm package 結構；本次公開倉庫提交只包含 Git commit 與 push；任何 GitHub tag、GitHub release、package publish 或正式部署，都需要另行明確確認。
+下一步不是再補 Agent Handoff Kit 說明，而是補齊學習型知識庫系統本身的最小公開產品形態：
+
+- 最小 package / CLI 入口。
+- 一個不含私人資料的可重現示例。
+- 使用者能看懂的端到端流程：輸入來源、產出知識點、保存到本地知識庫、形成跨來源洞見。
+
+任何 GitHub tag、GitHub release、npm publish 或部署，都需要另行明確確認。

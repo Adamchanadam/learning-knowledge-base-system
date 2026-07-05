@@ -7,12 +7,12 @@ Last Updated: 2026-07-05
 
 Stable facts that should survive across sessions. Update only when they change, but verify they still match reality at closeout.
 
-1. Project root and boundary: `<PUBLIC repo root>`; public-facing workspace, not an OPS mirror.
-2. Product/system identity: `學習型知識庫系統 PUBLIC` v0.1.0, a public release scaffold for install, upgrade, docs, examples, and future cleaned skill packaging.
-3. Governance model: Agent Handoff Kit v0.3.36 installed as the PUBLIC local agentic-AI operating layer.
+1. Project root and boundary: `<PUBLIC repo root>`; public-facing workspace for the learning knowledge base system, not an OPS mirror.
+2. Product identity: `學習型知識庫系統` v0.1.0. The public product is an AI-assisted, Obsidian-first learning knowledge base system that turns sources into reusable knowledge, personal application judgment, cross-source insight, and reader-facing outcome pages.
+3. Agent Handoff Kit role: installed as the PUBLIC local AI collaboration and continuity layer only. It is not the public product body, install promise, or user-facing value proposition.
 4. Source-of-truth ownership: PUBLIC docs and `dev/` files describe only this public repo. OPS data, OPS handoff history, internal research outputs, private Notion data, credentials, and local private paths are excluded.
 5. Release / publish boundary: commit, push, tag, release, package publish, and deploy need explicit user authorization.
-6. Installed Integrations registry: `dev/PROJECT_INDEX.md` `## Installed Integrations` section is the project's authoritative declaration of installed Connectors / MCPs / Plugins / Skills + Source-of-truth Architecture sub-table. New AI session must read it after governance reads and run availability probe per `runtime-core/AGENTS.core.md` Section 1. Credential values never appear here or in any `dev/*` file — only credential references such as AI tool secure storage, OS credential store, tool config, user-managed secret store, or env var name may be recorded.
+6. Installed Integrations registry: `dev/PROJECT_INDEX.md` `## Installed Integrations` section is the project's authoritative declaration of installed Connectors / MCPs / Plugins / Skills. Credential values never appear here or in any `dev/*` file.
 
 <!-- ack:section:closeout-reconciled-state -->
 ## Closeout-Reconciled State
@@ -23,44 +23,45 @@ This is the current-state area. At every full closeout, rewrite or explicitly co
 ## Current Baseline
 
 1. Project root: `<PUBLIC repo root>`.
-2. Product/system state: public release scaffold with Agent Handoff Kit bottom layer installed; not yet a complete public product release.
-3. Governance state: Agent Handoff Kit v0.3.36 installed; public docs now define install, upgrade, and boundary rules.
-4. Source-of-truth notes: `README.md` is the single public truth for install/upgrade behavior; `PUBLICATION_BOUNDARY.md` is the public/private boundary and OPS-to-PUBLIC release-flow truth.
+2. Product/system state: v0.1.0 public repo is an early scaffold for the learning knowledge base system. It now describes the product itself first; Agent Handoff Kit is only documented as the underlying AI collaboration layer.
+3. Public docs state: `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, `examples/README.md`, and `skill/README.md` were corrected on 2026-07-05 after a positioning audit found the previous README incorrectly presented Agent Handoff Kit as the product body.
+4. Package state: no npm package, product CLI, deployment flow, or reproducible public example has been released yet.
+5. Governance state: Agent Handoff Kit v0.3.36 remains installed for local AI continuity; public-facing product claims must not be derived from the Kit's install/upgrade page.
 
 <!-- ack:section:task-understanding-summary -->
 ## Task Understanding Summary
 
 <!-- ack:field:user-intent -->
-- User intent: Make the PUBLIC repo easy for users to install and upgrade through agentic AI, using the same Agent Handoff Kit bottom mechanism as OPS without importing OPS data.
+- User intent: Correct the PUBLIC repo after identifying that its README and governance files wrongly framed Agent Handoff Kit as the public product instead of the underlying collaboration mechanism.
 <!-- ack:field:task-essence -->
-- Task essence: Fresh-install Agent Handoff Kit into PUBLIC, then document user-facing install and upgrade flows.
-- User value: A public repo that can be operated by AI agents consistently across sessions without exposing private OPS material.
+- Task essence: Restore the correct public positioning: the product is `學習型知識庫系統`; Agent Handoff Kit is only the bottom layer for AI collaboration, startup, closeout, upgrade discipline, and governance continuity.
+- User value: Public readers should understand what the learning knowledge base system does, who it is for, what it produces, and what is not yet released.
 <!-- ack:field:success-criteria -->
-- Success criteria: PUBLIC has Agent Handoff Kit files, README-based install/upgrade guidance, OPS-to-PUBLIC release-flow guidance, v0.1.0 version bump, and user-facing release notes format, registered durable artifacts, passing doctor, and a private-data scan showing no leaked OPS/private content beyond boundary warnings.
-- Key background already read: PUBLIC `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, official Agent Handoff Kit GitHub repo, official AI install page.
-- Background still unread or blocked: none for current integration; future product docs and examples still need design.
-- Non-goals / boundaries: Do not copy OPS `dev/`, `outputs/`, session logs, internal decisions, private Notion identifiers, credentials, local private paths, or unlicensed third-party material into PUBLIC.
+- Success criteria: PUBLIC README first describes the learning knowledge base system; no public-facing doc tells users to install Agent Handoff Kit as if that were the product; governance files preserve the corrected distinction; validation scans confirm the old positioning phrases are gone.
+- Key background already read: PUBLIC `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/README.md`, `examples/README.md`, `skill/README.md`, `dev/SESSION_HANDOFF.md`, `dev/PROJECT_INDEX.md`, `dev/DOC_SYNC_REGISTRY.md`, OPS formal product requirements.
+- Non-goals / boundaries: Do not tag, create a GitHub release, publish to npm, deploy, or import OPS internal material.
 
 <!-- ack:section:active-objective -->
 ## Active Objective
 
-Run final health checks and prepare PUBLIC changes for a commit decision.
+PUBLIC positioning correction is locally complete and validated. Commit/push remains a separate action unless explicitly requested.
 
 <!-- ack:section:completed-this-session -->
 ## Completed This Session
 
 Record only work actually completed in the current session.
 
-1. PUBLIC current-state governance and public documentation updates are recorded. Detailed trace evidence is in `dev/SESSION_LOG.md`.
+1. PUBLIC public-facing docs were corrected so `學習型知識庫系統` is the product body and Agent Handoff Kit is only the underlying collaboration layer.
+2. PUBLIC governance state was rewritten to prevent future agents from treating Agent Handoff Kit install/upgrade as the product's public value proposition.
 
 <!-- ack:section:next-priorities -->
 ## Next Priorities
 
-Recommended next step: after this authorized commit and push, continue with the first public product/package structure decision — reason: tag, GitHub release, npm publish, and deploy are still separate release actions.
+Recommended next step: decide whether to commit and push the corrected PUBLIC docs.
 
-1. Commit and push the authorized PUBLIC v0.1.0 correction.
-2. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.
-3. Next product step: decide the first public package structure and user-facing minimum viable example.
+1. If Adam authorizes it, commit and push the PUBLIC correction.
+3. After PUBLIC positioning is clean, decide the first real public product shape: package / CLI entry, minimal reproducible example, and user-facing end-to-end workflow.
+4. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.
 
 <!-- ack:section:next-task-required-reading -->
 ## Next Task Required Reading
@@ -69,8 +70,8 @@ Before acting on the next task, read or mark blocked:
 
 | Source | Why required | Status |
 |---|---|---|
+| `README.md` | Public product positioning and current status | required |
 | `PUBLICATION_BOUNDARY.md` | Defines what PUBLIC may and may not contain | required |
-| `README.md` | Public user entrypoint, install/upgrade single source, OPS/PUBLIC role split, release sync flow, and version summary | required |
 | `VERSION` | Public product version source until package metadata exists | required before version bump |
 | `dev/PROJECT_INDEX.md` | PUBLIC file map and governance registry | required before file changes |
 | `dev/DOC_SYNC_REGISTRY.md` | Sync obligations for docs, governance, and release boundaries | required before file changes or closeout |
@@ -78,15 +79,15 @@ Before acting on the next task, read or mark blocked:
 <!-- ack:section:risks-blockers -->
 ## Risks / Blockers
 
-1. Main risk: accidentally importing OPS data or private local material into PUBLIC.
-2. Release risk: installing/upgrading Agent Handoff Kit is not authorization to push, tag, release, package publish, or deploy.
-3. Documentation risk: user-facing install/upgrade guidance must stay aligned with the official Agent Handoff Kit install page.
+1. Main product risk: public docs may again drift into describing the underlying AI collaboration layer instead of the learning knowledge base system.
+2. Release risk: PUBLIC v0.1.0 still has no product package, CLI, deployment flow, or reproducible public example.
+3. Privacy risk: PUBLIC must not import OPS data, private local material, Notion identifiers, credentials, or unlicensed third-party content.
 
 <!-- ack:section:validation-qc -->
 ## Validation / QC
 
-- Checks run this session: initial doctor after install ran and correctly flagged unregistered durable docs; follow-up validation pending after governance updates.
-- Checks not run and why: final doctor and privacy scan pending until all docs/index updates are complete.
+- Checks run this session: Agent Handoff Kit doctor passed 51/51; positioning pollution forbidden-phrase scan returned no matches; all remaining Agent Handoff Kit mentions were reviewed and are in bottom-layer / governance context; privacy scan found only boundary-rule text and handoff marker names, not actual secrets or private paths; `git diff --check` passed with CRLF warnings only.
+- Checks required before claiming complete: no additional local validation pending for the positioning correction.
 - Handoff evidence location: this file and `dev/SESSION_LOG.md` current entry.
 
 <!-- ack:section:workspace-identity -->
@@ -95,18 +96,18 @@ Before acting on the next task, read or mark blocked:
 Expected project root: `<PUBLIC repo root>`
 Git root: `<PUBLIC repo root>`
 Branch: `main`
-Commit: `c38a104 Initialize public release scaffold`
+Commit: `ebddfd1 Clarify public release notes format`
 Worktree / parallel workspace status: PUBLIC root only; separate from OPS workspace.
-Uncommitted changes summary: Agent Handoff Kit fresh install plus README-centered public install/upgrade, OPS/PUBLIC role split, release-flow governance updates, v0.1.0 bump, and release notes format correction.
+Uncommitted changes summary: PUBLIC positioning correction across public docs and governance files.
 
 <!-- ack:section:sync-status -->
 ## Sync Status
 
 Use statuses from `dev/DOC_SYNC_REGISTRY.md`: `confirmed`, `unverified`, `pending`, `blocked`, `not_applicable`.
 
-- Project index: pending final validation.
-- Doc sync registry: pending final validation.
-- Public docs / README: pending final validation.
+- Project index: confirmed after doctor and scan.
+- Doc sync registry: confirmed after doctor and scan.
+- Public docs / README: confirmed after positioning scan.
 - External knowledge tools: not_applicable.
 
 <!-- ack:section:state-reconciliation-check -->
@@ -116,17 +117,17 @@ At full closeout, complete this check after updating the state sections below.
 
 - Reconciled at: pending full closeout
 <!-- ack:field:state-sections-rewritten-or-confirmed -->
-- State sections rewritten or confirmed current: current sections updated for PUBLIC integration during active task; full closeout pending.
+- State sections rewritten or confirmed current: current sections updated for PUBLIC positioning correction; full closeout pending.
 <!-- ack:field:stale-snapshots-left -->
 - Stale snapshots left in this handoff: no known stale snapshot after current update.
 <!-- ack:field:lifecycle-conflicts-resolved -->
-- Completed / pending / risk / opening-message lifecycle conflicts resolved or explicitly reclassified: yes; completed work is recorded as current state and trace evidence, and this turn is authorized to commit and push PUBLIC main.
+- Completed / pending / risk / opening-message lifecycle conflicts resolved or explicitly reclassified: yes; old install/upgrade-as-product framing has been retired from current state.
 <!-- ack:field:persistence-routing-checked -->
-- Persistence routing checked: public docs in `README.md`, `PUBLICATION_BOUNDARY.md`, and `docs/`; current state in this handoff; trace evidence in `dev/SESSION_LOG.md`; file map in `dev/PROJECT_INDEX.md`.
+- Persistence routing checked: public docs in `README.md`, `PUBLICATION_BOUNDARY.md`, `docs/`, `examples/`, and `skill/`; current state in this handoff; trace evidence in `dev/SESSION_LOG.md`; file map in `dev/PROJECT_INDEX.md`.
 <!-- ack:field:recommended-next-step-explicit -->
-- Recommended next step is explicit and reasoned: yes, run final checks and diff review before commit.
+- Recommended next step is explicit and reasoned: yes, validate the correction before any commit/push.
 <!-- ack:field:opening-message-matches-current-state -->
-- Opening message matches current state: yes, mirrored to `START_NEXT_SESSION_PROMPT.txt` during this task.
+- Opening message matches current state: yes, mirrored to `START_NEXT_SESSION_PROMPT.txt` during this correction.
 <!-- ack:field:next-ai-can-continue -->
 - Next AI can continue from `AGENTS.md`, this handoff, `dev/PROJECT_INDEX.md`, and needed rule packs without searching old log history: yes.
 
@@ -165,7 +166,7 @@ Read dev/DOC_SYNC_REGISTRY.md before file changes or closeout.
 
 If this root does not match the expected project root, stop and ask for confirmation.
 
-Current state: PUBLIC repo is at public product version v0.1.0 and uses Agent Handoff Kit v0.3.36 as its local agentic-AI operating layer. This repo is public-facing and must not import OPS data, OPS handoff history, internal research outputs, private Notion data, local private paths, credentials, or unlicensed third-party material.
+Current state: PUBLIC v0.1.0 is an early public scaffold for the learning knowledge base system. The product is the AI-assisted, Obsidian-first knowledge system; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. The local positioning correction has passed validation. Do not present Agent Handoff Kit install/upgrade as the product.
 
-Recommended next step: after the authorized commit and push, decide the first public package structure and minimum viable public example. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.
+Recommended next step: decide whether to commit and push the validated PUBLIC positioning correction. After that, design the first real public product package / CLI entry and minimal reproducible example. Do not tag, create a GitHub release, publish to npm, or deploy without separate explicit user authorization.
 ```
