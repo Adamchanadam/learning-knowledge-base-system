@@ -44,7 +44,7 @@ This is the current-state area. At every full closeout, rewrite or explicitly co
 <!-- ack:section:active-objective -->
 ## Active Objective
 
-PUBLIC positioning correction is committed, pushed, tagged, and published as GitHub Release `v0.1.0`. The follow-up public-reader cleanup has updated local README / release copy and the GitHub Release body to remove internal release-boundary language and obsolete private-tool wording; remote README read-back passed the public-reader pollution scan.
+PUBLIC positioning correction is committed, pushed, tagged, and published as GitHub Release `v0.1.0`. The follow-up public-reader cleanup has updated local README / release copy and the GitHub Release body to remove internal release-boundary language, obsolete private-tool wording, and maintainer action-list content; remote README read-back passed the public-reader pollution scan.
 
 <!-- ack:section:completed-this-session -->
 ## Completed This Session
@@ -97,7 +97,7 @@ Before acting on the next task, read or mark blocked:
 Expected project root: `<PUBLIC repo root>`
 Git root: `<PUBLIC repo root>`
 Branch: `main`
-Commit: latest public-reader cleanup is pushed to `main`; verify with `git rev-parse HEAD` / `git ls-remote origin refs/heads/main` when exact hash is needed.
+Commit: `dcc2e18` is pushed to `main` for the README action-list cleanup; verify with `git rev-parse HEAD` / `git ls-remote origin refs/heads/main` when exact hash is needed.
 Worktree / parallel workspace status: PUBLIC root only; separate from OPS workspace.
 Uncommitted changes summary: PUBLIC positioning correction across public docs and governance files.
 

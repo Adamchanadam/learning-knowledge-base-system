@@ -21,8 +21,8 @@ Before closeout, record whether older log detail was kept, summarized, or archiv
 - **Done:** Deleted the maintainer action-list section from README and tightened public-reader validation so README must not contain public-facing maintainer action headings.
 - **QC:** Local README action-list scan passed; public-reader pollution scan passed for README and v0.1.0 release note; Agent Handoff Kit doctor passed 51/51 using `C:\tmp\npm-cache`; `git diff --check` passed with CRLF warnings only.
 - **Evidence disposition:** Current rule added to `dev/PROJECT_INDEX.md`; trace evidence kept here.
-- **Sync:** Pending commit, push, and remote README read-back.
-- **Pending:** Commit, push, and read back remote README.
+- **Sync:** Commit `dcc2e18` pushed to `main`; remote README read-back public-reader scan returned zero matches.
+- **Pending:** None for this cleanup.
 - **Risks:** Previous public-reader scan still allowed roadmap/action-list language as if it were useful product copy.
 - **Log maintenance:** No-op; corrective evidence checkpoint.
 <!-- ack:log-entry:end -->
