@@ -13,4 +13,4 @@ If this root does not match the expected project root, stop and ask for confirma
 
 Current state: PUBLIC v0.1.0 is an early public scaffold for the learning knowledge base system. The product is the AI-assisted, Obsidian-first knowledge system; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. Public positioning is now clean; do not present Agent Handoff Kit install/upgrade as the product.
 
-Recommended next step: commit and push the public-reader cleanup, then design the first real public product package / CLI entry and minimal reproducible example.
+Recommended next step: design the first real public product package / CLI entry and minimal reproducible example.

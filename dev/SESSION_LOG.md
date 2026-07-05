@@ -21,8 +21,8 @@ Before closeout, record whether older log detail was kept, summarized, or archiv
 - **Done:** Removed the internal boundary list from the public README, rewrote v0.1.0 release notes for public readers, replaced obsolete private-tool wording with generic private knowledge-base wording, and added public-reader pollution scanning as a required validation layer.
 - **QC:** Public-reader pollution scan passed for README and v0.1.0 release note; selected public docs have zero obsolete private-tool-name matches; Agent Handoff Kit doctor passed 51/51 using `C:\tmp\npm-cache`; `git diff --check` passed with CRLF warnings only; GitHub Release body was edited and read back clean.
 - **Evidence disposition:** Current correction absorbed into `dev/SESSION_HANDOFF.md`; validation rule added to `dev/PROJECT_INDEX.md`; trace evidence kept here.
-- **Sync:** GitHub Release v0.1.0 body updated and read back; local commit and push pending.
-- **Pending:** Commit and push the local cleanup.
+- **Sync:** GitHub Release v0.1.0 body updated and read back; public cleanup committed and pushed; remote README public-reader scan returned zero matches.
+- **Pending:** None for this cleanup.
 - **Risks:** Previous validation missed public-copy pollution because it checked product-positioning and privacy only, not public-reader suitability.
 - **Log maintenance:** No-op; corrective evidence checkpoint.
 <!-- ack:log-entry:end -->

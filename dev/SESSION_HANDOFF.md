@@ -44,7 +44,7 @@ This is the current-state area. At every full closeout, rewrite or explicitly co
 <!-- ack:section:active-objective -->
 ## Active Objective
 
-PUBLIC positioning correction is committed, pushed, tagged, and published as GitHub Release `v0.1.0`. The follow-up public-reader cleanup has updated local README / release copy and the GitHub Release body to remove internal release-boundary language and obsolete private-tool wording.
+PUBLIC positioning correction is committed, pushed, tagged, and published as GitHub Release `v0.1.0`. The follow-up public-reader cleanup has updated local README / release copy and the GitHub Release body to remove internal release-boundary language and obsolete private-tool wording; remote README read-back passed the public-reader pollution scan.
 
 <!-- ack:section:completed-this-session -->
 ## Completed This Session
@@ -57,7 +57,7 @@ Record only work actually completed in the current session.
 <!-- ack:section:next-priorities -->
 ## Next Priorities
 
-Recommended next step: commit and push the public-reader cleanup, then design the first real public package / CLI entry and minimum reproducible example.
+Recommended next step: design the first real public package / CLI entry and minimum reproducible example.
 
 1. Design the first real public product shape: package / CLI entry, minimal reproducible example, and user-facing end-to-end workflow.
 2. Add package metadata and package QA before any package publication attempt.
@@ -88,7 +88,7 @@ Before acting on the next task, read or mark blocked:
 ## Validation / QC
 
 - Checks run this session: public-reader pollution scan passed for README and v0.1.0 release note; selected public docs have zero obsolete private-tool-name matches; Agent Handoff Kit doctor passed 51/51 using a writable temporary npm cache; `git diff --check` passed with CRLF warnings only; GitHub Release `v0.1.0` body was edited and read back clean.
-- Checks required before claiming complete: commit and push the local cleanup, then read back public GitHub README if needed.
+- Checks required before claiming complete: no additional validation pending for this cleanup.
 - Handoff evidence location: this file and `dev/SESSION_LOG.md` current entry.
 
 <!-- ack:section:workspace-identity -->
@@ -97,7 +97,7 @@ Before acting on the next task, read or mark blocked:
 Expected project root: `<PUBLIC repo root>`
 Git root: `<PUBLIC repo root>`
 Branch: `main`
-Commit: active correction not yet pushed; verify with `git rev-parse HEAD` after commit.
+Commit: latest public-reader cleanup is pushed to `main`; verify with `git rev-parse HEAD` / `git ls-remote origin refs/heads/main` when exact hash is needed.
 Worktree / parallel workspace status: PUBLIC root only; separate from OPS workspace.
 Uncommitted changes summary: PUBLIC positioning correction across public docs and governance files.
 
@@ -109,7 +109,7 @@ Use statuses from `dev/DOC_SYNC_REGISTRY.md`: `confirmed`, `unverified`, `pendin
 - Project index: confirmed after doctor and scan.
 - Doc sync registry: confirmed after doctor and scan.
 - Public docs / README: confirmed after positioning scan.
-- GitHub sync: commit `5e84619`, tag `v0.1.0`, and GitHub Release `v0.1.0` verified; release body updated during public-reader cleanup.
+- GitHub sync: commit `5e84619`, tag `v0.1.0`, and GitHub Release `v0.1.0` verified; release body updated during public-reader cleanup; remote README scan passed.
 - npm publish: blocked because no `package.json` exists.
 - External knowledge tools: not_applicable.
 
@@ -171,5 +171,5 @@ If this root does not match the expected project root, stop and ask for confirma
 
 Current state: PUBLIC v0.1.0 is an early public scaffold for the learning knowledge base system. The product is the AI-assisted, Obsidian-first knowledge system; Agent Handoff Kit is only the underlying AI collaboration and continuity layer. Public positioning is now clean; do not present Agent Handoff Kit install/upgrade as the product.
 
-Recommended next step: commit and push the public-reader cleanup, then design the first real public product package / CLI entry and minimal reproducible example.
+Recommended next step: design the first real public product package / CLI entry and minimal reproducible example.
 ```
